@@ -1,5 +1,5 @@
 # ePresenter
-ePresenter is a popular church application in the bilingual Slavic community. It was originally written by Alex Korchemniy in 2004 using C# 1.0. It is now made available as free software under the GPLv3 license.
+ePresenter is a popular church application in the bilingual Slavic community. It was originally written by Alex Korchemniy and Peter Garbuz in 2004 using C# 1.0. It is now made available as free software under the GPLv3 license.
 
 ## Documentation
 http://vendisoft.biz/epresenter/documentation/bible_searching.html
