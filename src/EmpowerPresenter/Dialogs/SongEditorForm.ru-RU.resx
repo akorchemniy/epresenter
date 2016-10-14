@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="sliderOpacity.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABsAAABfCAYAAAAZHbwvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAA
+        CxMBAJqcGAAAAm9JREFUaEPt2sduAjEUBdDko7Pnw+i9996LAAECIYTE0tGNNIhMBjL2+N1NEslZBOYd
+        t9yFx++hUOjjjfUD7Ha7qev1qi6Xizqfz+p0OgVuqIN6qIv6X4PCL/wBHx6PR3U4HNR+v1e73c644XnU
+        QT3URf07hh7gA3xpu92qzWaj1uu1ccPzqIN6qIv6dww6eoIvAFmtVmq5XBo3PI86qIe6qH/HsEboBXqE
+        Ly4WCzWfz40bnkcd1ENd1P+GYY3QG4wI0Gw2M254HnVQD3X/OBaPx1U4HNZuRtOYzWa1IXTOCCuXyzys
+        2WzysMFgwMPwvxaJRLRBozUDlkqleFihUOBhtVqNh3W7XR42mUx4GDaJbmwZ70ZgurEVCKtUKlpTGQhr
+        tVo8TDe2Ao1MN7YCYzqxFRgrFou+1y0wVq/XeViv1+NhOrEVeBqxIxOJhK/RWcFyuRwP8xtbVkbWbrd5
+        IxsOhzzMb2xZmUZg6XT619FZw/zEljWs0WjwRtbv93mYn9iyNo1+Yssq9ltsWcWq1erLdbOKdTodHjYa
+        jXgYNkk0Gn0KWp1GYJlMhoeVSiUe9iq2rE/jq9iyjk2nU940YpMkk0lP0PrIgOXzeR72LLZERvYstkSw
+        8XjMm0asWywW+wGKjOxZbIlhXgegYpjXAagY5nWSIIZ5xZYY5hVbopj7AFQUcx+AimLuA1BRzB1bopg7
+        tsSxxwNQcewxtsSxx9gSxx5jSxzDJnFe7FEw5wCUgjmxRcGc2KJgTmxRMCe2KJjz3oaGIbZoGA5AaRje
+        29AwxBYNwyb5xzg3XWh3eKi3k6j3rqg3yqh35XABi9E+AZEz8JUsU8XgAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="sliderOpacity.Error" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="sliderOpacity.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="sliderOpacity.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblCopyrightTitle.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCopyrightTitle.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lblCopyrightTitle.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblCopyrightTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblCopyrightTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 15</value>
+  </data>
+  <data name="lblCopyrightTitle.Text" xml:space="preserve">
+    <value>Авторское право</value>
+  </data>
+  <data name="pbCopyright.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pbCopyright.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="pbCopyright.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pbCopyright.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="txtCopyright.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCopyright.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtCopyright.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pictureBox3.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pictureBox3.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="pictureBox3.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pictureBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="llAttachPPT.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="llAttachPPT.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="llAttachPPT.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="llAttachPPT.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="llAttachPPT.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>48, 14</value>
+  </data>
+  <data name="llAttachPPT.Text" xml:space="preserve">
+    <value>Чтобы связать PowerPoint презентацию с псалмом, щелкните здесь</value>
+  </data>
+  <data name="btnFont.Cursor" type="System.Windows.Forms.Cursor, System.Windows.Forms" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAACAAEAICAAAAUAAAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8
+        AAAH/gAAB/4AAA/+AAAP/wAAH/8AABf/AAA3/wAAd/8AAGf7AAAG2wAABtoAAAbYAAAGwAAABgAAAAYA
+        AAAGAAAABgAAAAYAAAAAAAAA//////////////////////////////////////////////////////gB
+        ///4Af//+AH///AA///wAP//4AD//+AAf//AAH//wAB//4AAf/8AAH//AAB//xAAf//wAP//8AH///AH
+        ///wP///8P////D////w////8P////n///8=
+</value>
+  </data>
+  <data name="btnFont.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnFont.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnFont.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnImage.Cursor" type="System.Windows.Forms.Cursor, System.Windows.Forms" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAACAAEAICAAAAUAAAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8
+        AAAH/gAAB/4AAA/+AAAP/wAAH/8AABf/AAA3/wAAd/8AAGf7AAAG2wAABtoAAAbYAAAGwAAABgAAAAYA
+        AAAGAAAABgAAAAYAAAAAAAAA//////////////////////////////////////////////////////gB
+        ///4Af//+AH///AA///wAP//4AD//+AAf//AAH//wAB//4AAf/8AAH//AAB//xAAf//wAP//8AH///AH
+        ///wP///8P////D////w////8P////n///8=
+</value>
+  </data>
+  <data name="btnImage.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnImage.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnImage.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label3.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label3.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Номер:</value>
+  </data>
+  <data name="pbPhoto.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pbPhoto.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="pbPhoto.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtChorus.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtChorus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 60</value>
+  </data>
+  <data name="txtChorus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>553, 21</value>
+  </data>
+  <data name="label2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Припев:</value>
+  </data>
+  <data name="dataGrid1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dataGrid1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="dataGrid1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="dataGridBoolColumn1.HeaderText" xml:space="preserve">
+    <value>Припев</value>
+  </data>
+  <data name="dataGridTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Cтих</value>
+  </data>
+  <data name="label1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 16</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Название:</value>
+  </data>
+  <data name="txtTitle.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 36</value>
+  </data>
+  <data name="txtTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>553, 21</value>
+  </data>
+  <data name="btnSave.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSave.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnSave.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="btnCancel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCancel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnCancel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="llDetach.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="llDetach.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="llDetach.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="llDetach.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="llDetach.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>63, 14</value>
+  </data>
+  <data name="llDetach.Text" xml:space="preserve">
+    <value>Этот псалом связан с PowerPoint презентацией. Чтобы развязать, щелкните здесь.</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAEBAAAAEAGABoAwAAJgAAACAgAAABABgAqAwAAI4DAAAoAAAAEAAAACAAAAABABgAAAAAAEAD
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAA9aFV9aFV9aFV9aFV9aFV9aFV9aFV9aFV9aFV9aFV9aFV9aFV9aFV
+        9aFVAAAA9aFV////////////////////////////////////////////////////////9aFV9aFV////
+        ////////////+/v88PDx5ubn19XXysfJvrq7n5ibo52fzsrM////9aFV9aFV3eTotcXP1tvgy83Rj4+U
+        fXh8b2ZqY1hbYlZZYlZZY1dZZFdabGFk9ff49KtorXZJVkI7mI6NXlZTnJmbm5aZWk5PW0xNW0tMW0tN
+        W01QXU9RYFJUaFtfcWRoy45bX09CUUdAl5OSWFVVVE9QmpSXW0tKW0ZFWkVFWUdHWkpMXU1PY1NValxf
+        aFhcuIJYa29xWWl1naKqm52hnJmdpKCkgYSKnKCnra+2uLm/v8DGxcXLysvRyczSZFJVclpVu6GSqqGl
+        sqmuuLG4vrrBvLvCt7e9tbW8uLi/v77FyMfOzczS0M/W0tLZ0NDW08zK76Nex8HGvbe8vrq/u7m/vLzB
+        vbzCvr3EwcDGx8XM0c/V1tTa2Nbd2trg3dzi3dzi9aFV+/v82NbZxMLHxcPHx8bLysjNzcvR0c/U1dPZ
+        2dfd393j5ePo6Ofr7Ovu7MGd9aFV////////5eTl3dzf3t3f4eDj5+Xo7Ovt8fDy9fT2+fj5/Pv8/f3+
+        ////9aFV9aFV////////////////////////////////////////////////////////9aFV9aFV////
+        ////////////////////////////////////////////////////9aFV9aFV////////////////////
+        ////////////////////////////////////9aFV9aFV////////////////////////////////////
+        ////////////////////9aFVAAAA9aFV9aFV9aFV9aFV9aFV9aFV9aFV9aFV9aFV9aFV9aFV9aFV9aFV
+        9aFVAAAAgAH//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//gAH//ygAAAAgAAAAQAAAAAEAGAAAAAAAgAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD1oVX1oVX1
+        oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVUA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD1oVX/////////////////////////////////////////
+        ///////////////////////////////////////////////1oVUAAAAAAAAAAAAAAAAAAAAAAAAAAAD1
+        oVX/////////////////////////////////////////////////////////////////////////////
+        ///////////////////1oVUAAAAAAAAAAAAAAAAAAAAAAAD1oVX/////////////////////////////
+        ///////////////////////////////////////////////////////////////////1oVUAAAAAAAAA
+        AAAAAAAAAAAAAAD1oVX/////////////////////////////////////////////////////////////
+        ///////////////////////////////////1oVUAAAAAAAAAAAAAAAAAAAAAAAD1oVX/////////////
+        ///////////////////////////////5+fry8/Tn6evb3N7W19rJy85+fIOioaWwrrLHxsj/////////
+        ///1oVUAAAAAAAAAAAAAAAAAAAAAAAD1oVX////9/v7z9/v7+/z4+Pjo6evS1NfBwsampquVlJmCfoNn
+        X2NqX2FiVlhSREVWRERaR0doV1ZZSUlAKylIODrLy9D5+vn////1oVUAAAAAAAAAAAAAAAAAAAAAAAD1
+        oVWjo6prbXJdV1mRnKRuc3hCP0M+Oz86NDY8MDI8Li1FMTNMNzZNODVPOjhUQD9TQD9SQkRSQ0VUQUFT
+        PjxWSEuJhpDW1dbr7ez1olcAAAAAAAAAAAAAAAAAAAAAAACypZlRTU4KAAAAAABHRUZseoAjGBg4LjFA
+        NjhJOjxOQEBQP0FVQkRXRURWQ0NWQkFXVWFYX3JXV2RWRUVQOjhlWlx0bXWBdHfr7u71oVUAAAAAAAAA
+        AAAAAAAAAABMUlc5QUYuFxAiDAY0LC5EPD55h407NjY5MDJBOTtIOz1LPz9QP0FVQkRXRENVQ0JXRERU
+        Q0VQPj9RPDtRPDtFLCpZTU2IhY1CLC6xrK31oVUAAAAAAAAAAAAAAAAAAAAzOj9daG5CKyUBAABEMDNy
+        dH10hIgtIyM7MzU+NTdAMTNCNDRDMDFELi9KNTRLNzdEMjJNOztWRkdUREVURkdfUlR7d3yMiZFFLi5x
+        Ymf1oVUAAAAAAAAAAAAAAAAAAABDR0pDUVicpKhVU1VfZWiAkZguLi4ZEBIyKi00LTBIPkJPRklkW2Bs
+        Y2h6dHiMiY6HhImYl52oqK+pqK6srLK6vMLJzNOPipJJNTRfTVOgl50AAAAAAAAAAAAAAAAAAAA5P0MA
+        AABJWF+MmqN4ho1WV1pRTVFvb3WIhoyUk5ioqK6xsbe8vsTFx83HyM7NzdPQ0NbNy9DKyM3Lys/Nys/K
+        yMzQztO7usFdUFJnVVl0YGsAAAAAAAAAAAAAAAAAAAB+gYZxdHp4eH6IhouYlJivrLLKy9HQz9XRz9TV
+        0tfT0NTU0dXTz9TQzdLQzNHKx8zKyM3JxsvJxszKx83Lyc7MydDOy9Hg4OainKRpWWFxW2YAAAAAAAAA
+        AAAAAAAAAAAAAADQys/LyM3LyM3Mys/Jx8vKx8zOys/Fw8i+vMK3tryvr7Wmpq6io6uZmaFzcHehn6fc
+        2uDU0djU0djU0tnV09rV09rd2+Li4uqKgIhhSlQAAAAAAAAAAAAAAAAAAAAAAADqpmq/vMC7ub6+vMHH
+        xsulo6l7eH6TlJyanKSYmaOcnaWjo6qqqrKxsbiwrrbDwcnb2eHb2ODb2eDc2uHc2uLd2+Pd2uHv7vbQ
+        ztViTFcAAAAAAAAAAAAAAAAAAAAAAAD1oVX29fbFwse6ub3Av8SysbaenaO0srjCwMTHxcvOy9PZ1dve
+        29/e3OLk4eng3OTY1t3c2uHg3uXi3+fh3ubk4enk4urf3OT09Pyvpa8AAAAAAAAAAAAAAAAAAAAAAAD1
+        oVX////+/v7Tz9S4tru/vsPLyc7JxsvHxMnHxcnIxszIxs7NydDT0NXT0djU0drW09vX1dzZ197g3+Tp
+        5uzi3+Xq6Ozy8fTt7e/wqWkAAAAAAAAAAAAAAAAAAAAAAAD1oVX////////////k4+S8uL67ub29u8HB
+        v8TGw8jHxcrW1NfZ1tzc2t7s6+3t7e/v7vD6+vv6+vv////////////////////////1oVUAAAAAAAAA
+        AAAAAAAAAAAAAAD1oVX/////////////////////////////////////////////////////////////
+        ///////////////////////////////////1oVUAAAAAAAAAAAAAAAAAAAAAAAD1oVX/////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///1oVUAAAAAAAAAAAAAAAAAAAAAAAD1oVX/////////////////////////////////////////////
+        ///////////////////////////////////////////////////1oVUAAAAAAAAAAAAAAAAAAAAAAAD1
+        oVX/////////////////////////////////////////////////////////////////////////////
+        ///////////////////1oVUAAAAAAAAAAAAAAAAAAAAAAAD1oVX/////////////////////////////
+        ///////////////////////////////////////////////////////////////////1oVUAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD1oVX/////////////////////////////////////////////////////////
+        ///////////////////////////////1oVUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD1oVX1oVX1
+        oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVX1oVUA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD////////////////4AAAf8AAAD+AAAAfgAAAH4AAAB+AAAAfgAAAH4AAAB+AAAAfAAAAHwAAAB8AA
+        AAfAAAAHwAAAB+AAAAfgAAAH4AAAB+AAAAfgAAAH4AAAB+AAAAfgAAAH4AAAB+AAAAfwAAAP+AAAH///
+        /////////////w==
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Редуктор псалмов</value>
+  </data>
+  <data name="errorProvider1.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAwMDAAICAgAAAAP8AAP8AAAD//wD/AAAA/wD/AP//
+        AAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAJmZAAAAAACZmZmZAAAACZmf+ZmQAAAJmZ/5mZAAAJmZmZmZ
+        mQAAmZmZmZmZAACZmZ/5mZkAAJmZn/mZmQAACZmf+ZmQAAAJmZ/5mZAAAACZmZmZAAAAAACZmQAAAAAA
+        AAAAAAAAAAAAAAAAAAD//wAA//8AAPw/AADwDwAA4AcAAOAHAADAAwAAwAMAAMADAADAAwAA4AcAAOAH
+        AADwDwAA/D8AAP//AAD//wAA
+</value>
+  </data>
+  <data name="txtNumber.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 12</value>
+  </data>
+  <data name="txtNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>553, 21</value>
+  </data>
+</root>

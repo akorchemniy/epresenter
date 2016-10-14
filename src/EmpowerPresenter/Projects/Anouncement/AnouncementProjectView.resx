@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblTutor.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;txtMessage.Name" xml:space="preserve">
+    <value>txtMessage</value>
+  </data>
+  <data name="themedPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnRemReg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 23</value>
+  </data>
+  <data name="&gt;&gt;btnActivate.Type" xml:space="preserve">
+    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=1.0.2271.20750, Culture=neutral, PublicKeyToken=9b818ef6b7c83fa1</value>
+  </data>
+  <data name="btnRemReg.Text" xml:space="preserve">
+    <value>Font</value>
+  </data>
+  <data name="pnlPreviewImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 253</value>
+  </data>
+  <data name="btnAddReg.Text" xml:space="preserve">
+    <value>Font</value>
+  </data>
+  <data name="&gt;&gt;pnlPreviewImage.Name" xml:space="preserve">
+    <value>pnlPreviewImage</value>
+  </data>
+  <data name="lblMessageTtl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 15</value>
+  </data>
+  <data name="btnChangeFont.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnChangeFont.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="lblMessageTtl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;btnRemReg.Type" xml:space="preserve">
+    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=1.0.2271.20750, Culture=neutral, PublicKeyToken=9b818ef6b7c83fa1</value>
+  </data>
+  <data name="btnRemReg.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;btnChangeFont.Type" xml:space="preserve">
+    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=1.0.2271.20750, Culture=neutral, PublicKeyToken=9b818ef6b7c83fa1</value>
+  </data>
+  <data name="&gt;&gt;btnChangeFont.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="themedPanel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="lblInfo.Text" xml:space="preserve">
+    <value>Live preview</value>
+  </data>
+  <data name="btnChangeFont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 10</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblTutor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;lblMessageTtl.Name" xml:space="preserve">
+    <value>lblMessageTtl</value>
+  </data>
+  <data name="pnlPreviewImage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="btnActivate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 23</value>
+  </data>
+  <data name="&gt;&gt;btnImage.Type" xml:space="preserve">
+    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=1.0.2271.20750, Culture=neutral, PublicKeyToken=9b818ef6b7c83fa1</value>
+  </data>
+  <data name="&gt;&gt;pnlPreviewImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblMessageTtl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 157</value>
+  </data>
+  <data name="btnActivate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="btnAddReg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 10</value>
+  </data>
+  <data name="&gt;&gt;btnImage.Parent" xml:space="preserve">
+    <value>themedPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnBrightness.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
+    <value>themedPanel1</value>
+  </data>
+  <data name="&gt;&gt;themedPanel1.Type" xml:space="preserve">
+    <value>Vendisoft.Controls.ThemedPanel, EmpowerPresenter, Version=1.0.2271.20750, Culture=neutral, PublicKeyToken=9b818ef6b7c83fa1</value>
+  </data>
+  <data name="&gt;&gt;btnBrightness.Parent" xml:space="preserve">
+    <value>themedPanel1</value>
+  </data>
+  <data name="txtMessage.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="btnImage.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;btnImage.Name" xml:space="preserve">
+    <value>btnImage</value>
+  </data>
+  <data name="txtMessage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 10</value>
+  </data>
+  <data name="&gt;&gt;btnAddReg.Type" xml:space="preserve">
+    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=1.0.2271.20750, Culture=neutral, PublicKeyToken=9b818ef6b7c83fa1</value>
+  </data>
+  <data name="&gt;&gt;btnChangeFont.Name" xml:space="preserve">
+    <value>btnChangeFont</value>
+  </data>
+  <data name="&gt;&gt;pnlPreviewImage.Parent" xml:space="preserve">
+    <value>themedPanel1</value>
+  </data>
+  <data name="lblTutor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 116</value>
+  </data>
+  <data name="&gt;&gt;btnBrightness.Type" xml:space="preserve">
+    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=1.0.2271.20750, Culture=neutral, PublicKeyToken=9b818ef6b7c83fa1</value>
+  </data>
+  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="txtMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 119</value>
+  </data>
+  <data name="&gt;&gt;btnChangeFont.Parent" xml:space="preserve">
+    <value>themedPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnAddReg.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 20</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
+    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=1.0.2271.20750, Culture=neutral, PublicKeyToken=9b818ef6b7c83fa1</value>
+  </data>
+  <data name="lblInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>353, 13</value>
+  </data>
+  <data name="&gt;&gt;btnActivate.Parent" xml:space="preserve">
+    <value>themedPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=1.0.2271.20750, Culture=neutral, PublicKeyToken=9b818ef6b7c83fa1</value>
+  </data>
+  <data name="&gt;&gt;btnImage.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txtMessage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 23</value>
+  </data>
+  <data name="&gt;&gt;lblInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblInfo.Name" xml:space="preserve">
+    <value>lblInfo</value>
+  </data>
+  <data name="btnBrightness.Location" type="System.Drawing.Point, System.Drawing">
+    <value>323, 10</value>
+  </data>
+  <data name="&gt;&gt;btnRemReg.Parent" xml:space="preserve">
+    <value>themedPanel1</value>
+  </data>
+  <data name="btnChangeFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 23</value>
+  </data>
+  <data name="lblInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;lblTutor.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtMessage.Parent" xml:space="preserve">
+    <value>themedPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnAddReg.Parent" xml:space="preserve">
+    <value>themedPanel1</value>
+  </data>
+  <data name="&gt;&gt;lblMessageTtl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="btnActivate.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;lblMessageTtl.Parent" xml:space="preserve">
+    <value>themedPanel1</value>
+  </data>
+  <data name="btnBrightness.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 23</value>
+  </data>
+  <data name="btnClose.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;themedPanel1.Name" xml:space="preserve">
+    <value>themedPanel1</value>
+  </data>
+  <data name="btnBrightness.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AnouncementProjectView</value>
+  </data>
+  <data name="&gt;&gt;btnBrightness.Name" xml:space="preserve">
+    <value>btnBrightness</value>
+  </data>
+  <data name="btnImage.Text" xml:space="preserve">
+    <value>Change picture</value>
+  </data>
+  <data name="&gt;&gt;pnlPreviewImage.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="btnAddReg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 23</value>
+  </data>
+  <data name="btnClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnlPreviewImage.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 23</value>
+  </data>
+  <data name="txtMessage.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>586, 307</value>
+  </data>
+  <data name="txtMessage.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnActivate.Text" xml:space="preserve">
+    <value>Activate</value>
+  </data>
+  <data name="&gt;&gt;btnAddReg.Name" xml:space="preserve">
+    <value>btnAddReg</value>
+  </data>
+  <data name="&gt;&gt;lblInfo.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>552, 10</value>
+  </data>
+  <data name="lblMessageTtl.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="btnAddReg.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
+    <value>themedPanel1</value>
+  </data>
+  <data name="lblMessageTtl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnBrightness.Text" xml:space="preserve">
+    <value>Change opacity</value>
+  </data>
+  <data name="txtMessage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 177</value>
+  </data>
+  <data name="&gt;&gt;themedPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnChangeFont.Text" xml:space="preserve">
+    <value>Font</value>
+  </data>
+  <data name="&gt;&gt;btnRemReg.Name" xml:space="preserve">
+    <value>btnRemReg</value>
+  </data>
+  <data name="&gt;&gt;lblMessageTtl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="themedPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="&gt;&gt;lblTutor.Name" xml:space="preserve">
+    <value>lblTutor</value>
+  </data>
+  <data name="&gt;&gt;txtMessage.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblTutor.Parent" xml:space="preserve">
+    <value>themedPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnActivate.Name" xml:space="preserve">
+    <value>btnActivate</value>
+  </data>
+  <data name="&gt;&gt;lblInfo.Parent" xml:space="preserve">
+    <value>themedPanel1</value>
+  </data>
+  <data name="&gt;&gt;themedPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnRemReg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 10</value>
+  </data>
+  <data name="lblTutor.Text" xml:space="preserve">
+    <value>To create an anouncement add a text region, position the region, and enter the text below.
+
+To quickly change the image drag and drop and image file onto the project area.</value>
+  </data>
+  <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lblTutor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 43</value>
+  </data>
+  <data name="&gt;&gt;btnRemReg.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 23</value>
+  </data>
+  <data name="lblMessageTtl.Text" xml:space="preserve">
+    <value>Message:</value>
+  </data>
+  <data name="btnImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 10</value>
+  </data>
+  <data name="themedPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>586, 307</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
+    <value>btnClose</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="pnlPreviewImage.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;btnActivate.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="pnlPreviewImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 43</value>
+  </data>
+  <data name="lblInfo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt, style=Bold</value>
+  </data>
+  <data name="themedPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;lblTutor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

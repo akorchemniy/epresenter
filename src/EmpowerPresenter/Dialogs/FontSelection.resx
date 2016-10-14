@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Text color</value>
+  </data>
+  <data name="&gt;&gt;colorUI.Parent" xml:space="preserve">
+    <value>popupControlContainer1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cbOutline.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cbShadow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 20</value>
+  </data>
+  <data name="&gt;&gt;cpOutline.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pbTopRight.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pbTopRight.Name" xml:space="preserve">
+    <value>pbTopRight</value>
+  </data>
+  <data name="pbBottomCenter.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <assembly alias="Syncfusion" name="Syncfusion, Version=1.0.2054.40994, Culture=neutral, PublicKeyToken=40c120a17b136ab7" />
+  <data name="&gt;&gt;pbTopLeft.Name" xml:space="preserve">
+    <value>pbTopLeft</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnShowPicker.PreferredWidth" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;pbMiddleRight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cbShadow.Text" xml:space="preserve">
+    <value>Shadow</value>
+  </data>
+  <data name="lbSize.Items19" xml:space="preserve">
+    <value>80</value>
+  </data>
+  <data name="&gt;&gt;gbEffects.Name" xml:space="preserve">
+    <value>gbEffects</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cpShadow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 20</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 16</value>
+  </data>
+  <data name="pbBottomRight.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAIAAAD5fKMWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAA
+        CxMBAJqcGAAAALZJREFUKFONkCESwyAQRamr7FF6jB6jR8kRkJUrkchIZOXKSmTkShz9YUPJpBkGZjMD
+        w8vn7V7IB3O9GV0Jn2z77VjPekWe89i6P56G5i6dck5ZUo5RCt3PLqhIo8OpiEIiEhdBMH802w3RgeOR
+        btP424V3oe0h+ycKgUW4OKB8UJo8vDupeoVhNBo/rG2tndW2SmpgVISGdTt6P4HTdyxVGqjKaQwUUTRH
+        vE6OkToRT69KQ2iwvgJSeNNiPqooAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;txtFontStyle.Name" xml:space="preserve">
+    <value>txtFontStyle</value>
+  </data>
+  <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pbMiddleCenter.Name" xml:space="preserve">
+    <value>pbMiddleCenter</value>
+  </data>
+  <data name="cbDoubleSpace.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 68</value>
+  </data>
+  <data name="&gt;&gt;pbMiddleLeft.Parent" xml:space="preserve">
+    <value>gbAlignment</value>
+  </data>
+  <data name="pbBottomLeft.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAIAAAD5fKMWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAA
+        CxMBAJqcGAAAALhJREFUKFONkCESwyAQRamr7FF6jB6jR8kRIitXIpGRyMiVlcjIlTj6YUPJtBkGZpmB
+        4fH4y4WcN9eb0RExZV/v27rXI3Kcxsb98TS0dOmYUkwSUwhS6L67oCKN9qdBFBKRsAnE/Fa3HaI9h0a3
+        f/hbqdivhZ5/3N+gCLAJFxTlvNLkkLvj1iN8RqNxIbeVO6ttaQBGBcSY7YE+dWd0zagDTZWGUsOpBhFR
+        tAS8TpZhnYinV6URaLA+/9h2e1kCZ7AAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="txtColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 21</value>
+  </data>
+  <data name="&gt;&gt;pbBottomLeft.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lbFonts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 48</value>
+  </data>
+  <data name="txtSize.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pbTopRight.Parent" xml:space="preserve">
+    <value>gbAlignment</value>
+  </data>
+  <data name="btnShowPicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 17</value>
+  </data>
+  <data name="lbFontStyle.Items1" xml:space="preserve">
+    <value>Bold</value>
+  </data>
+  <data name="cbOutline.Text" xml:space="preserve">
+    <value>Outline</value>
+  </data>
+  <data name="lbSize.Items14" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtSize.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;lbFontStyle.Name" xml:space="preserve">
+    <value>lbFontStyle</value>
+  </data>
+  <data name="&gt;&gt;pbMiddleLeft.Name" xml:space="preserve">
+    <value>pbMiddleLeft</value>
+  </data>
+  <data name="txtColor.TextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="&gt;&gt;cpShadow.Name" xml:space="preserve">
+    <value>cpShadow</value>
+  </data>
+  <data name="cpShadow.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="cbShadow.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnShowPicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 0</value>
+  </data>
+  <data name="pbBottomCenter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 64</value>
+  </data>
+  <data name="cbAutomatic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 1</value>
+  </data>
+  <data name="pbMiddleCenter.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="cbAutomatic.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pbMiddleRight.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pbTopLeft.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lbFonts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 184</value>
+  </data>
+  <data name="cbOutline.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lbSize.Items13" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;pbMiddleRight.Parent" xml:space="preserve">
+    <value>gbAlignment</value>
+  </data>
+  <data name="&gt;&gt;txtFontStyle.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="popupControlContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 240</value>
+  </data>
+  <data name="&gt;&gt;gbEffects.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="pbTopRight.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 308</value>
+  </data>
+  <data name="lbSize.IntegralHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;popupControlContainer1.Name" xml:space="preserve">
+    <value>popupControlContainer1</value>
+  </data>
+  <data name="pbMiddleCenter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 40</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;cbDoubleSpace.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 8</value>
+  </data>
+  <data name="lbFontStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="pbMiddleRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 40</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="btnSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;pbBottomLeft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbBottomLeft.Name" xml:space="preserve">
+    <value>pbBottomLeft</value>
+  </data>
+  <data name="gbAlignment.Text" xml:space="preserve">
+    <value>Alignment</value>
+  </data>
+  <data name="&gt;&gt;cbOutline.Name" xml:space="preserve">
+    <value>cbOutline</value>
+  </data>
+  <data name="&gt;&gt;btnShowPicker.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pbBottomRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 64</value>
+  </data>
+  <data name="pbMiddleRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 24</value>
+  </data>
+  <data name="txtFontStyle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtColor.TextBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="txtFont.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="cpShadow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 20</value>
+  </data>
+  <data name="&gt;&gt;lbFonts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Font:</value>
+  </data>
+  <data name="txtColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 21</value>
+  </data>
+  <data name="lbSize.Items18" xml:space="preserve">
+    <value>72</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Font</value>
+  </data>
+  <data name="&gt;&gt;cpOutline.Parent" xml:space="preserve">
+    <value>gbEffects</value>
+  </data>
+  <data name="&gt;&gt;lbFontStyle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="txtColor.TextBox.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="&gt;&gt;cpShadow.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 21</value>
+  </data>
+  <data name="&gt;&gt;btnShowPicker.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.Tools.ButtonEditChildButton, Syncfusion, Version=1.0.2054.40994, Culture=neutral, PublicKeyToken=40c120a17b136ab7</value>
+  </data>
+  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 24</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="&gt;&gt;colorUI.Name" xml:space="preserve">
+    <value>colorUI</value>
+  </data>
+  <data name="btnClose.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbSize.Items8" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="lbSize.Items17" xml:space="preserve">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;lbSize.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lbSize.Items5" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="cbAutomatic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbSize.Items7" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lbSize.Items1" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lbSize.Items3" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lbSize.Items2" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lbFontStyle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtColor.TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pbBottomRight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbBottomRight.Name" xml:space="preserve">
+    <value>pbBottomRight</value>
+  </data>
+  <data name="cbDoubleSpace.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="pbTopLeft.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;cbShadow.Name" xml:space="preserve">
+    <value>cbShadow</value>
+  </data>
+  <data name="btnSave.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;cbDoubleSpace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Size:</value>
+  </data>
+  <data name="lbSize.Items12" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cbShadow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtColor.TextBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="pbMiddleLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 40</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FontSelection</value>
+  </data>
+  <data name="pbMiddleCenter.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAIAAAD5fKMWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAA
+        CxMBAJqcGAAAALtJREFUKFONkCESwyAQRVNX2aP0GD1Gj5IjRFauRCIjkZErK5GRK3H0w0JI0w4ThszA
+        8ObxyIWsG663QUfAJ2VdtnWvR2Q5nhv3x3OguUuHGEOUEL2XTPfdGRVptNOQlvuzgpjf6jaFPsSrUkT8
+        KqAd+0Z3xHrklkxPB/cWCuUqnBswrVOa7Nbw9wbHKQM/44tOoam1hKpVUWRMZkcf3tTQJaEWNFUaqMap
+        BomYNKfbyTCsI/H4qjSCTs4P+FB1FHsD3Y4AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="cbDoubleSpace.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnShowPicker.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Control</value>
+  </data>
+  <data name="&gt;&gt;txtFont.Name" xml:space="preserve">
+    <value>txtFont</value>
+  </data>
+  <data name="gbAlignment.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;pbBottomRight.Parent" xml:space="preserve">
+    <value>gbAlignment</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pbTopRight.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnShowPicker.Parent" xml:space="preserve">
+    <value>txtColor</value>
+  </data>
+  <data name="lbFonts.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="pbMiddleLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 24</value>
+  </data>
+  <data name="gbEffects.Text" xml:space="preserve">
+    <value>Effects</value>
+  </data>
+  <data name="lbSize.Items10" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="txtFontStyle.ItemHeight" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lbSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 184</value>
+  </data>
+  <data name="txtColor.TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 2</value>
+  </data>
+  <data name="&gt;&gt;txtColor.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="cbOutline.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 21</value>
+  </data>
+  <data name="pbMiddleCenter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;txtFont.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbSize.Name" xml:space="preserve">
+    <value>lbSize</value>
+  </data>
+  <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;pbBottomCenter.Parent" xml:space="preserve">
+    <value>gbAlignment</value>
+  </data>
+  <data name="&gt;&gt;pbTopLeft.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pbTopCenter.Name" xml:space="preserve">
+    <value>pbTopCenter</value>
+  </data>
+  <data name="gbEffects.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 240</value>
+  </data>
+  <data name="pbTopLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 24</value>
+  </data>
+  <data name="pbTopCenter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 24</value>
+  </data>
+  <data name="&gt;&gt;cpShadow.Parent" xml:space="preserve">
+    <value>gbEffects</value>
+  </data>
+  <data name="&gt;&gt;cbDoubleSpace.Name" xml:space="preserve">
+    <value>cbDoubleSpace</value>
+  </data>
+  <data name="gbEffects.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 93</value>
+  </data>
+  <data name="txtFontStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="pbBottomLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 24</value>
+  </data>
+  <data name="pbMiddleRight.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;pbBottomCenter.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pbTopRight.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAIAAAD5fKMWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAA
+        CxMBAJqcGAAAALpJREFUKFONkCESgzAQRamr7FF6jB6jR+EIyMqVkZHISOTKykjkyrj0h00IhQxDZplJ
+        hjcvD25kXXd/dLoCHsn7fCxnfUWW47X1fL07GitdrYed97LQ5+4QBSNxpR1CTqz6ir/qNok+LlWKiJ8F
+        Yse+RYf2PW5a6GHnXkOhnIW9oAFjndJka0YLdZwy8DP+6BSaWnOoWhVFxmA29O6bKjol1IKmQgPVONUg
+        EUNjup0Mw9oT959CI+ji/AA5rnP3oKguNwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;cbAutomatic.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cpOutline.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.ColorPickerButton, Syncfusion, Version=1.0.2054.40994, Culture=neutral, PublicKeyToken=40c120a17b136ab7</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbAlignment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lbFontStyle.Items3" xml:space="preserve">
+    <value>Bold Italic</value>
+  </data>
+  <data name="&gt;&gt;lbFontStyle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lbSize.Items16" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="popupControlContainer1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lbSize.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;pbMiddleRight.Name" xml:space="preserve">
+    <value>pbMiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="lbSize.Items4" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;gbAlignment.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lbSize.Items6" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="txtColor.TextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 240</value>
+  </data>
+  <data name="gbEffects.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtColor.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cbAutomatic.Name" xml:space="preserve">
+    <value>cbAutomatic</value>
+  </data>
+  <data name="colorUI.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="pbMiddleRight.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lbFontStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 184</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
+    <value>btnClose</value>
+  </data>
+  <data name="gbAlignment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 240</value>
+  </data>
+  <data name="&gt;&gt;pbMiddleCenter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbAutomatic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;popupControlContainer1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="pbTopLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="txtColor.TextBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lbSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbFonts.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cpOutline.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;btnShowPicker.Name" xml:space="preserve">
+    <value>btnShowPicker</value>
+  </data>
+  <data name="txtFont.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cbDoubleSpace.Parent" xml:space="preserve">
+    <value>gbEffects</value>
+  </data>
+  <data name="pbTopCenter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="groupBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;txtFontStyle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pbBottomRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 24</value>
+  </data>
+  <data name="pbMiddleLeft.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;txtColor.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.Tools.ButtonEdit, Syncfusion, Version=1.0.2054.40994, Culture=neutral, PublicKeyToken=40c120a17b136ab7</value>
+  </data>
+  <data name="pbMiddleLeft.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAIAAAD5fKMWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAA
+        CxMBAJqcGAAAALxJREFUKFONkDEOgzAMRenWsUfpMXqMHoUjMHb0yJiR0SOjx44ZGT1mS79jaBAIhGWk
+        RH75eeFGgZv7o/FK+HRez9tl7yMKkq/V8/VuaDilU84pa8oxaqHPswuqWmmGSHXdreKkCJavZ/dG78sj
+        VdVplljpk2wf8VjobpP9F0XkpFIc0IGdpnDk7SiLaeBnVBoHTNRcZ9E1Co2uX9GbN1V0jEADaFpooC6H
+        G23G1jTY7dQLUluS9rPQELrYPyx2dA3fM2wZAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;pbTopRight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 56</value>
+  </data>
+  <data name="pbBottomRight.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="pbBottomCenter.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="pbTopLeft.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAIAAAD5fKMWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAA
+        CxMBAJqcGAAAALtJREFUKFONkCESgzAQRamr7FF6jB6jR+EIyMqVkZHISOTKykjkyrj0b5Y0LbQMmWUm
+        Gd68PDiRD9350tlKeGTZL8d6tlfkOR9b19u9o1Hp5tvscsqScoxS6H13QUUaHfbddhk/ze2U3i5Tikic
+        BRmBY6P/dRsKcZgKPazc71Bws3BBMT4YTb5l/EIDawZ+xhetodq6hJrVUGQM7oNefVNDJ0U9aKo0UIsz
+        DRIxNOrt5BjWnrh/VBpBB+cF77hv7cXLRm4AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="txtSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 21</value>
+  </data>
+  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="pbBottomCenter.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAIAAAD5fKMWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAA
+        CxMBAJqcGAAAALpJREFUKFONkCESwyAQRVNX2aP0GD1Gj5IjRFauRCIjV1aurERGrsTRHzaUtM0wMJsZ
+        GF4ef/dEnofzZbAV8em2347lbFfkJfWt6+0+0NykY0oxaUwhaKbb7oyqVpoPgxikqmFRiOVlbtdFs4Qv
+        uo7ibwcxPzM9/bg/QRFgUckZUJ6NJo/cDbFdYRiVxg9rW2tnpa1sZUEFxJjcjrYJHL4A1IOmQgO1cKZB
+        RBTNAa+TE1hHkvFRaATqrDd9mXem+z4N4gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="pbBottomCenter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 24</value>
+  </data>
+  <data name="pbTopRight.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="pbMiddleRight.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 16</value>
+  </data>
+  <data name="pbTopRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 24</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Font style:</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 8</value>
+  </data>
+  <data name="pbMiddleRight.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAIAAAD5fKMWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAA
+        CxMBAJqcGAAAALxJREFUKFONkCESwyAQRVNX2aP0GD1Gj5IjRFauRCIjkZErK5GRK3H0w0JI0w6TnWWG
+        Hd58HlzIuuF6G7QClpR9GeusR2Q5nqv74znQ3KVDjCFKiN5LpvvZGRVptNtEmvHPjt+abRq999dIEfGr
+        QMOxb3QnVY/ckunpkL2JInIV9gIHtHVKk20CGf17Dz7ji06iybWIaqrjZAyNyezow5sauiTUgqZKA1U5
+        jYEimmaP28kwUkfi8VVpCJ3sD+jJdk7ga1wsAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;pbMiddleLeft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnShowPicker.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="txtColor.TextBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="cbAutomatic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 32</value>
+  </data>
+  <data name="pbMiddleCenter.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="lbFontStyle.Items" xml:space="preserve">
+    <value>Regular</value>
+  </data>
+  <data name="pbBottomLeft.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pbTopLeft.Parent" xml:space="preserve">
+    <value>gbAlignment</value>
+  </data>
+  <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 24</value>
+  </data>
+  <data name="&gt;&gt;cbShadow.Parent" xml:space="preserve">
+    <value>gbEffects</value>
+  </data>
+  <data name="pbMiddleCenter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 24</value>
+  </data>
+  <data name="gbAlignment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 93</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbOutline.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cpOutline.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 20</value>
+  </data>
+  <data name="btnShowPicker.UseVisualStyleBackColor" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cpShadow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;gbEffects.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pbTopCenter.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;gbAlignment.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txtSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>376, 24</value>
+  </data>
+  <data name="pbTopCenter.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="pbBottomRight.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;txtSize.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txtSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pbBottomCenter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbSize.Items9" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnClose.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lbSize.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="cpShadow.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pbBottomRight.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbFontStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 48</value>
+  </data>
+  <data name="lbFonts.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lbFonts.IntegralHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;colorUI.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pbBottomCenter.Name" xml:space="preserve">
+    <value>pbBottomCenter</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;pbBottomCenter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbMiddleCenter.Parent" xml:space="preserve">
+    <value>gbAlignment</value>
+  </data>
+  <data name="cpOutline.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="lbSize.Items" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;popupControlContainer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gbEffects.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="cbDoubleSpace.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;cpShadow.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.ColorPickerButton, Syncfusion, Version=1.0.2054.40994, Culture=neutral, PublicKeyToken=40c120a17b136ab7</value>
+  </data>
+  <data name="txtColor.TextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>32767</value>
+  </data>
+  <data name="&gt;&gt;popupControlContainer1.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.PopupControlContainer, Syncfusion, Version=1.0.2054.40994, Culture=neutral, PublicKeyToken=40c120a17b136ab7</value>
+  </data>
+  <data name="lbFontStyle.Items2" xml:space="preserve">
+    <value>Italic</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>450, 341</value>
+  </data>
+  <data name="colorUI.Text" xml:space="preserve">
+    <value>colorUIControl1</value>
+  </data>
+  <data name="&gt;&gt;pbMiddleCenter.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;gbEffects.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cbDoubleSpace.Text" xml:space="preserve">
+    <value>Double Space</value>
+  </data>
+  <data name="pbTopLeft.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbBottomLeft.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;cbOutline.Parent" xml:space="preserve">
+    <value>gbEffects</value>
+  </data>
+  <data name="pbMiddleLeft.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnShowPicker.Name" xml:space="preserve">
+    <value>btnShowPicker</value>
+  </data>
+  <data name="cpOutline.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 44</value>
+  </data>
+  <data name="&gt;&gt;lbFontStyle.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 16</value>
+  </data>
+  <data name="&gt;&gt;txtFontStyle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="pbBottomLeft.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="&gt;&gt;lbFonts.Name" xml:space="preserve">
+    <value>lbFonts</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbOutline.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="popupControlContainer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>500, 0</value>
+  </data>
+  <data name="pbMiddleLeft.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="popupControlContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="cpOutline.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtFont.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pbBottomLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 64</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbFonts.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txtFontStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 21</value>
+  </data>
+  <data name="&gt;&gt;pbBottomLeft.Parent" xml:space="preserve">
+    <value>gbAlignment</value>
+  </data>
+  <data name="&gt;&gt;pbTopLeft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtColor.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="cbOutline.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 44</value>
+  </data>
+  <data name="lbSize.Items15" xml:space="preserve">
+    <value>54</value>
+  </data>
+  <data name="txtColor.TextBox.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="btnShowPicker.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnShowPicker.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAADJJREFUOE9jYBgF
+        oyFAgxD4DzSTECZoLT4DCGqGKcBmCNGasRlCsmZkQ8jWPKpx5IQAAIj4GOizWkRbAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;cbAutomatic.Parent" xml:space="preserve">
+    <value>popupControlContainer1</value>
+  </data>
+  <data name="pbTopCenter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 16</value>
+  </data>
+  <data name="txtColor.TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 13</value>
+  </data>
+  <data name="&gt;&gt;txtSize.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pbTopCenter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pbTopRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="lbSize.Items11" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;pbBottomRight.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtFont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 24</value>
+  </data>
+  <data name="lbSize.Items21" xml:space="preserve">
+    <value>96</value>
+  </data>
+  <data name="&gt;&gt;txtColor.Name" xml:space="preserve">
+    <value>txtColor</value>
+  </data>
+  <data name="&gt;&gt;pbTopCenter.Parent" xml:space="preserve">
+    <value>gbAlignment</value>
+  </data>
+  <data name="&gt;&gt;colorUI.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.ColorUIControl, Syncfusion, Version=1.0.2054.40994, Culture=neutral, PublicKeyToken=40c120a17b136ab7</value>
+  </data>
+  <data name="colorUI.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 32</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnClose.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;cpOutline.Name" xml:space="preserve">
+    <value>cpOutline</value>
+  </data>
+  <data name="&gt;&gt;pbMiddleLeft.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbDoubleSpace.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 21</value>
+  </data>
+  <data name="lbFontStyle.IntegralHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtColor.TextBox.WordWrap" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>376, 8</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="lbSize.Items20" xml:space="preserve">
+    <value>88</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;gbAlignment.Name" xml:space="preserve">
+    <value>gbAlignment</value>
+  </data>
+  <data name="&gt;&gt;cbShadow.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cbShadow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;lbSize.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lbFonts.ItemHeight" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="lbSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>376, 48</value>
+  </data>
+  <data name="cbShadow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 21</value>
+  </data>
+  <data name="txtFontStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 24</value>
+  </data>
+  <data name="cbAutomatic.Text" xml:space="preserve">
+    <value>Automatic</value>
+  </data>
+  <data name="colorUI.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 198</value>
+  </data>
+  <data name="txtSize.ItemHeight" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 308</value>
+  </data>
+  <data name="&gt;&gt;txtSize.Name" xml:space="preserve">
+    <value>txtSize</value>
+  </data>
+  <data name="&gt;&gt;pbTopCenter.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="$this.AutoScaleBaseSize" type="System.Drawing.Size, System.Drawing">
+    <value>5, 13</value>
+  </data>
+  <data name="txtFont.ItemHeight" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;txtFont.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtColor.TextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="pbTopCenter.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAIAAAD5fKMWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAA
+        CxMBAJqcGAAAALpJREFUKFONkCESgzAQRamr7FF6jB6jR+EIyMqVkZHISOTKykjkSlz6k00ITSlDZplJ
+        hjcvDy5kXXe9dboWPJL3+VjO+oosh3Pr/nh2NGa6Kvd23kuij91LEIyElXYIORbr2+Q2kf5dqhQRPwvE
+        jn1L/7uB3+KmRA+New2Fchb2AhRjndJka8Ye6jhm4Gd80TE0tuZQtSqKjMFs6OabKjpF1IKmQgPVONUg
+        EUNjvJ0Mw9oT969CI+jkfABrV2sHwXlkuAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PresenterDataset" targetNamespace="http://tempuri.org/PresenterDataset.xsd" xmlns:mstns="http://tempuri.org/PresenterDataset.xsd" xmlns="http://tempuri.org/PresenterDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BIBDATAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BIBDATAConnectionString (Settings)" PropertyReference="ApplicationSettings.EmpowerPresenter.Properties.Settings.GlobalReference.Default.BIBDATAConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PresenterDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PresenterDataset" msprop:Generator_DataSetName="PresenterDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Songs" msprop:Generator_UserTableName="Songs" msprop:Generator_RowDeletedName="SongsRowDeleted" msprop:Generator_RowChangedName="SongsRowChanged" msprop:Generator_RowClassName="SongsRow" msprop:Generator_RowChangingName="SongsRowChanging" msprop:Generator_RowEvArgName="SongsRowChangeEvent" msprop:Generator_RowEvHandlerName="SongsRowChangeEventHandler" msprop:Generator_TableClassName="SongsDataTable" msprop:Generator_TableVarName="tableSongs" msprop:Generator_RowDeletingName="SongsRowDeleting" msprop:Generator_TablePropName="Songs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Title" msprop:Generator_UserColumnName="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" type="xs:string" default="" minOccurs="0" msdata:Ordinal="5" />
+              <xs:element name="Chorus" msprop:Generator_UserColumnName="Chorus" msprop:Generator_ColumnVarNameInTable="columnChorus" msprop:Generator_ColumnPropNameInRow="Chorus" msprop:Generator_ColumnPropNameInTable="ChorusColumn" type="xs:string" default="" minOccurs="0" msdata:Ordinal="6" />
+              <xs:element name="Location" msprop:Generator_UserColumnName="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" type="xs:string" default="" minOccurs="0" msdata:Ordinal="7" />
+              <xs:element name="FontId" msprop:Generator_UserColumnName="FontId" msprop:Generator_ColumnVarNameInTable="columnFontId" msprop:Generator_ColumnPropNameInRow="FontId" msprop:Generator_ColumnPropNameInTable="FontIdColumn" type="xs:int" msdata:Ordinal="8" />
+              <xs:element name="Settings" msprop:Generator_UserColumnName="Settings" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Settings" msprop:Generator_ColumnPropNameInTable="SettingsColumn" msprop:Generator_ColumnVarNameInTable="columnSettings" type="xs:string" minOccurs="0" msdata:Ordinal="9" />
+            </xs:sequence>
+            <xs:attribute name="AutoNumber" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_UserColumnName="AutoNumber" msprop:Generator_ColumnVarNameInTable="columnAutoNumber" msprop:Generator_ColumnPropNameInRow="AutoNumber" msprop:Generator_ColumnPropNameInTable="AutoNumberColumn" type="xs:int" use="required" />
+            <xs:attribute name="Number" msprop:Generator_UserColumnName="Number" msprop:nullValue="" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInTable="NumberColumn" msprop:Generator_ColumnPropNameInRow="Number" type="xs:int" use="required" />
+            <xs:attribute name="DisplayDefault" msprop:Generator_UserColumnName="DisplayDefault" msprop:nullValue="true" msprop:Generator_ColumnVarNameInTable="columnDisplayDefault" msprop:Generator_ColumnPropNameInTable="DisplayDefaultColumn" msprop:Generator_ColumnPropNameInRow="DisplayDefault" type="xs:boolean" default="true" />
+            <xs:attribute name="Image" msprop:Generator_UserColumnName="Image" msprop:nullValue="4" msprop:Generator_ColumnVarNameInTable="columnImage" msprop:Generator_ColumnPropNameInTable="ImageColumn" msprop:Generator_ColumnPropNameInRow="Image" type="xs:int" default="4" />
+            <xs:attribute name="Overlay" msprop:Generator_UserColumnName="Overlay" msprop:nullValue="50" msprop:Generator_ColumnVarNameInTable="columnOverlay" msprop:Generator_ColumnPropNameInTable="OverlayColumn" msprop:Generator_ColumnPropNameInRow="Overlay" type="xs:int" default="50" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SongVerses" msprop:Generator_UserTableName="SongVerses" msprop:Generator_RowDeletedName="SongVersesRowDeleted" msprop:Generator_RowChangedName="SongVersesRowChanged" msprop:Generator_RowClassName="SongVersesRow" msprop:Generator_RowChangingName="SongVersesRowChanging" msprop:Generator_RowEvArgName="SongVersesRowChangeEvent" msprop:Generator_RowEvHandlerName="SongVersesRowChangeEventHandler" msprop:Generator_TableClassName="SongVersesDataTable" msprop:Generator_TableVarName="tableSongVerses" msprop:Generator_RowDeletingName="SongVersesRowDeleting" msprop:Generator_TablePropName="SongVerses">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Verse" msprop:Generator_UserColumnName="Verse" msprop:Generator_ColumnVarNameInTable="columnVerse" msprop:Generator_ColumnPropNameInRow="Verse" msprop:Generator_ColumnPropNameInTable="VerseColumn" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+              <xs:element name="OrderNum" msprop:Generator_UserColumnName="OrderNum" msprop:Generator_ColumnVarNameInTable="columnOrderNum" msprop:Generator_ColumnPropNameInRow="OrderNum" msprop:Generator_ColumnPropNameInTable="OrderNumColumn" type="xs:int" minOccurs="0" msdata:Ordinal="3" />
+            </xs:sequence>
+            <xs:attribute name="AutoNumber" msprop:Generator_UserColumnName="AutoNumber" msprop:Generator_ColumnVarNameInTable="columnAutoNumber" msprop:Generator_ColumnPropNameInRow="AutoNumber" msprop:Generator_ColumnPropNameInTable="AutoNumberColumn" type="xs:int" use="required" />
+            <xs:attribute name="IsChorus" msprop:Generator_UserColumnName="IsChorus" msprop:nullValue="false" msprop:Generator_ColumnVarNameInTable="columnIsChorus" msprop:Generator_ColumnPropNameInTable="IsChorusColumn" msprop:Generator_ColumnPropNameInRow="IsChorus" type="xs:boolean" default="false" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BibleLookUp" msprop:Generator_UserTableName="BibleLookUp" msprop:Generator_RowDeletedName="BibleLookUpRowDeleted" msprop:Generator_RowChangedName="BibleLookUpRowChanged" msprop:Generator_RowClassName="BibleLookUpRow" msprop:Generator_RowChangingName="BibleLookUpRowChanging" msprop:Generator_RowEvArgName="BibleLookUpRowChangeEvent" msprop:Generator_RowEvHandlerName="BibleLookUpRowChangeEventHandler" msprop:Generator_TableClassName="BibleLookUpDataTable" msprop:Generator_TableVarName="tableBibleLookUp" msprop:Generator_RowDeletingName="BibleLookUpRowDeleting" msprop:Generator_TablePropName="BibleLookUp">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderNum" msprop:Generator_UserColumnName="OrderNum" msprop:Generator_ColumnVarNameInTable="columnOrderNum" msprop:Generator_ColumnPropNameInRow="OrderNum" msprop:Generator_ColumnPropNameInTable="OrderNumColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="VersionId" msprop:Generator_UserColumnName="VersionId" msprop:Generator_ColumnVarNameInTable="columnVersionId" msprop:Generator_ColumnPropNameInRow="VersionId" msprop:Generator_ColumnPropNameInTable="VersionIdColumn" type="xs:string" />
+              <xs:element name="MappingBook" msprop:Generator_UserColumnName="MappingBook" msprop:Generator_ColumnVarNameInTable="columnMappingBook" msprop:Generator_ColumnPropNameInRow="MappingBook" msprop:Generator_ColumnPropNameInTable="MappingBookColumn" type="xs:string" />
+              <xs:element name="Book" msprop:Generator_UserColumnName="Book" msprop:Generator_ColumnVarNameInTable="columnBook" msprop:Generator_ColumnPropNameInRow="Book" msprop:Generator_ColumnPropNameInTable="BookColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DisplayBook" msprop:Generator_UserColumnName="DisplayBook" msprop:Generator_ColumnVarNameInTable="columnDisplayBook" msprop:Generator_ColumnPropNameInRow="DisplayBook" msprop:Generator_ColumnPropNameInTable="DisplayBookColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NumberOfChapters" msprop:Generator_UserColumnName="NumberOfChapters" msprop:Generator_ColumnVarNameInTable="columnNumberOfChapters" msprop:Generator_ColumnPropNameInRow="NumberOfChapters" msprop:Generator_ColumnPropNameInTable="NumberOfChaptersColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BibleChapters" msprop:Generator_UserTableName="BibleChapters" msprop:Generator_RowDeletedName="BibleChaptersRowDeleted" msprop:Generator_RowChangedName="BibleChaptersRowChanged" msprop:Generator_RowClassName="BibleChaptersRow" msprop:Generator_RowChangingName="BibleChaptersRowChanging" msprop:Generator_RowEvArgName="BibleChaptersRowChangeEvent" msprop:Generator_RowEvHandlerName="BibleChaptersRowChangeEventHandler" msprop:Generator_TableClassName="BibleChaptersDataTable" msprop:Generator_TableVarName="tableBibleChapters" msprop:Generator_RowDeletingName="BibleChaptersRowDeleting" msprop:Generator_TablePropName="BibleChapters">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Number" msprop:Generator_UserColumnName="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BibleVerses" msprop:Generator_UserTableName="BibleVerses" msprop:Generator_RowDeletedName="BibleVersesRowDeleted" msprop:Generator_RowChangedName="BibleVersesRowChanged" msprop:Generator_RowClassName="BibleVersesRow" msprop:Generator_RowChangingName="BibleVersesRowChanging" msprop:Generator_RowEvArgName="BibleVersesRowChangeEvent" msprop:Generator_RowEvHandlerName="BibleVersesRowChangeEventHandler" msprop:Generator_TableClassName="BibleVersesDataTable" msprop:Generator_TableVarName="tableBibleVerses" msprop:Generator_RowDeletingName="BibleVersesRowDeleting" msprop:Generator_TablePropName="BibleVerses">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Number" msprop:Generator_UserColumnName="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" type="xs:int" />
+              <xs:element name="Verse" msprop:Generator_UserColumnName="Verse" msprop:Generator_ColumnVarNameInTable="columnVerse" msprop:Generator_ColumnPropNameInRow="Verse" msprop:Generator_ColumnPropNameInTable="VerseColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SongNotes" msprop:Generator_UserTableName="SongNotes" msprop:Generator_RowDeletedName="SongNotesRowDeleted" msprop:Generator_RowChangedName="SongNotesRowChanged" msprop:Generator_RowClassName="SongNotesRow" msprop:Generator_RowChangingName="SongNotesRowChanging" msprop:Generator_RowEvArgName="SongNotesRowChangeEvent" msprop:Generator_RowEvHandlerName="SongNotesRowChangeEventHandler" msprop:Generator_TableClassName="SongNotesDataTable" msprop:Generator_TableVarName="tableSongNotes" msprop:Generator_RowDeletingName="SongNotesRowDeleting" msprop:Generator_TablePropName="SongNotes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Number" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msdata:Caption="#" msprop:Generator_UserColumnName="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Note" msprop:Generator_UserColumnName="Note" msprop:Generator_ColumnVarNameInTable="columnNote" msprop:Generator_ColumnPropNameInRow="Note" msprop:Generator_ColumnPropNameInTable="NoteColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="DSKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Songs" />
+      <xs:field xpath="@mstns:AutoNumber" />
+    </xs:unique>
+    <xs:unique name="DSKey4" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BibleLookUp" />
+      <xs:field xpath="mstns:VersionId" />
+      <xs:field xpath="mstns:MappingBook" />
+    </xs:unique>
+    <xs:unique name="DSKey3" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BibleChapters" />
+      <xs:field xpath="mstns:Number" />
+    </xs:unique>
+    <xs:unique name="DSKey5" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BibleVerses" />
+      <xs:field xpath="mstns:Number" />
+    </xs:unique>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:SongNotes" />
+      <xs:field xpath="mstns:Number" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

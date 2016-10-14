@@ -1,0 +1,920 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E7E20BF-0C0C-4EC9-B32D-A25104F4544F}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>projector.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>EmpowerPresenter</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EmpowerPresenter</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>EmpowerPresenter.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>2.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Internal Debug Only|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE;InternalOnly</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>706526BC05D35A6AFE7D7132009AC1172F7E80B0</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>EmpowerPresenter_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="CustomTraceListener">
+      <HintPath>..\..\3rdparty\CustomTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="FirebirdSql.Data.FirebirdClient">
+      <HintPath>..\..\3rdparty\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NoProgress">
+      <HintPath>..\..\3rdparty\NoProgress.dll</HintPath>
+    </Reference>
+    <Reference Include="syncfusion">
+      <HintPath>..\..\3rdparty\syncfusion.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Name>System.Runtime.Serialization.Formatters.Soap</Name>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\NinePatchButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SearchPopup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dialogs\BibleManagerDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\BibleManagerDlg.Designer.cs">
+      <DependentUpon>BibleManagerDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\eSwordImpDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\eSwordImpDlg.Designer.cs">
+      <DependentUpon>eSwordImpDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SongNotesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SongNotesForm.Designer.cs">
+      <DependentUpon>SongNotesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SongPackageDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SongPackageDlg.Designer.cs">
+      <DependentUpon>SongPackageDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Experimental\DXDispEngine.cs" />
+    <Compile Include="Helper\Base32.cs" />
+    <Compile Include="Helper\DelayedTask.cs" />
+    <Compile Include="Dialogs\ErrorDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ErrorDlg.Designer.cs">
+      <DependentUpon>ErrorDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Anouncement\AnouncementSearchPnl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Projects\Anouncement\AnouncementSearchPnl.Designer.cs">
+      <DependentUpon>AnouncementSearchPnl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Bible\BibleManager.cs" />
+    <Compile Include="Projects\Bible\eSwordBibImporter.cs" />
+    <Compile Include="Projects\Scroller\ScrollerSearchPnl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Projects\Scroller\ScrollerSearchPnl.Designer.cs">
+      <DependentUpon>ScrollerSearchPnl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Song\SongFormatDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projects\Song\SongFormatDlg.Designer.cs">
+      <DependentUpon>SongFormatDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Image\ImageDispStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projects\Image\ImageDispStyle.Designer.cs">
+      <DependentUpon>ImageDispStyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Anouncement\AnouncementProjectView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Projects\Anouncement\AnouncementProjectView.Designer.cs">
+      <DependentUpon>AnouncementProjectView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Scroller\ScrollerDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projects\Anouncement\AnouncementProject.cs" />
+    <Compile Include="Dialogs\DualDispInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DualDispInfo.Designer.cs">
+      <DependentUpon>DualDispInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FullSongPreviewControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data\SearchHelper.cs" />
+    <Compile Include="Controls\SongPreviewControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PerformanceTimer.cs" />
+    <Compile Include="Projects\Image\ImageProject.cs" />
+    <Compile Include="Projects\Bible\BibleSearchPnl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Projects\Bible\BibleSearchPnl.Designer.cs">
+      <DependentUpon>BibleSearchPnl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresenterDataset.cs">
+      <DependentUpon>PresenterDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BibVersePreviewControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PopupSlider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CrashReportProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresenterDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PresenterDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Controls\ProjectListItem.cs" />
+    <Compile Include="Projects\Bible\BibClasses.cs" />
+    <Compile Include="Projects\Bible\BibleProject.cs" />
+    <Compile Include="Projects\Bible\BibleProjectView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Projects\Bible\BibleProjectView.Designer.cs">
+      <DependentUpon>BibleProjectView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ThemedDrawing.cs" />
+    <Compile Include="Controls\ThemedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AboutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AddCategoryPrompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AssignToCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper\Configuration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Songs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\SongVerses.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DisplayEngine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\DisplaySelection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data\Firebird.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fixes\DataGridMultiLineColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fixes\DataGridNoActiveCellColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fixes\DataGridWithEnter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FontSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ImageSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces.cs" />
+    <Compile Include="Helper\Loc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\Photos\PhotoInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\Photos\PhotoPreviewContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Photos\PhotoPreviewItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helper\PresenterFont.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Projects\Image\ImageProjectView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Projects\Image\ImageProjectView.Designer.cs">
+      <DependentUpon>ImageProjectView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Prompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projects\Scroller\ScrollerProjectView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Projects\Scroller\ScrollerProjectView.Designer.cs">
+      <DependentUpon>ScrollerProjectView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Song\SongPackage.cs" />
+    <Compile Include="Projects\Song\SongSearchPnl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Projects\Song\SongSearchPnl.Designer.cs">
+      <DependentUpon>SongSearchPnl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Song\SongClasses.cs" />
+    <Compile Include="Projects\Song\SongProjectView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Projects\Song\SongProjectView.Designer.cs">
+      <DependentUpon>SongProjectView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Song\SongProject.cs" />
+    <Compile Include="Dialogs\DemoVersionOnly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DemoVersionOnly.Designer.cs">
+      <DependentUpon>DemoVersionOnly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ProjSaveDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ProjSaveDlg.Designer.cs">
+      <DependentUpon>ProjSaveDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SongEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper\XmlSerializer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Projects\Scroller\ScrollerProject.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Controls\TextRegionCtrl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Controls\FullSongPreviewControl.resx">
+      <DependentUpon>FullSongPreviewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SearchPopup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SearchPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="BibData.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="content\default.full">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="content\default.preview">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Dialogs\BibleManagerDlg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BibleManagerDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ErrorDlg.resx">
+      <DependentUpon>ErrorDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\eSwordImpDlg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>eSwordImpDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ProjSaveDlg.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProjSaveDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SongNotesForm.resx">
+      <DependentUpon>SongNotesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SongPackageDlg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SongPackageDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Anouncement\AnouncementProjectView.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnouncementProjectView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Anouncement\AnouncementSearchPnl.resx">
+      <DependentUpon>AnouncementSearchPnl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Anouncement\AnouncementSearchPnl.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnouncementSearchPnl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Image\ImageDispStyle.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImageDispStyle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Scroller\ScrollerProjectView.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScrollerProjectView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Scroller\ScrollerSearchPnl.resx">
+      <DependentUpon>ScrollerSearchPnl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Scroller\ScrollerSearchPnl.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScrollerSearchPnl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Song\SongFormatDlg.resx">
+      <DependentUpon>SongFormatDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Image\ImageDispStyle.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImageDispStyle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Anouncement\AnouncementProjectView.resx">
+      <DependentUpon>AnouncementProjectView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Scroller\ScrollerDisplay.resx">
+      <DependentUpon>ScrollerDisplay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AboutDialog.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AddCategoryPrompt.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddCategoryPrompt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AssignToCategory.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AssignToCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DualDispInfo.resx">
+      <DependentUpon>DualDispInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DemoVersionOnly.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DemoVersionOnly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DualDispInfo.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DualDispInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FontSelection.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FontSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ImageSelection.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImageSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Prompt.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prompt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Settings.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SongEditorForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SongEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Bible\BibleProjectView.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BibleProjectView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Bible\BibleSearchPnl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BibleSearchPnl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CrashReportProgress.resx">
+      <DependentUpon>CrashReportProgress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Bible\BibleProjectView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BibleProjectView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AboutDialog.resx">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AddCategoryPrompt.resx">
+      <DependentUpon>AddCategoryPrompt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AssignToCategory.resx">
+      <DependentUpon>AssignToCategory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayEngine.resx">
+      <DependentUpon>DisplayEngine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpowerPresenter.plsk" />
+    <EmbeddedResource Include="Fixes\DataGridMultiLineColumn.resx">
+      <DependentUpon>DataGridMultiLineColumn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fixes\DataGridWithEnter.resx">
+      <DependentUpon>DataGridWithEnter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FontSelection.resx">
+      <DependentUpon>FontSelection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ImageButton.resx">
+      <DependentUpon>ImageButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ImageSelection.resx">
+      <DependentUpon>ImageSelection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Photos\PhotoPreviewContainer.resx">
+      <DependentUpon>PhotoPreviewContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Photos\PhotoPreviewItem.resx">
+      <DependentUpon>PhotoPreviewItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Prompt.resx">
+      <DependentUpon>Prompt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Bible\BibleSearchPnl.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BibleSearchPnl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Image\ImageProjectView.resx">
+      <DependentUpon>ImageProjectView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Image\ImageProjectView.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImageProjectView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Scroller\ScrollerProjectView.resx">
+      <DependentUpon>ScrollerProjectView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Song\SongFormatDlg.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SongFormatDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Song\SongProjectView.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SongProjectView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Song\SongSearchPnl.resx">
+      <DependentUpon>SongSearchPnl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Song\SongProjectView.resx">
+      <DependentUpon>SongProjectView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DemoVersionOnly.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DemoVersionOnly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects\Song\SongSearchPnl.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SongSearchPnl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ProjSaveDlg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProjSaveDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SongEditorForm.resx">
+      <DependentUpon>SongEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <Content Include="content\BIBDATA.FDB">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="content\Photocategories.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PresenterDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PresenterDataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="PresenterDataset.xss">
+      <DependentUpon>PresenterDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\Model1Container.datasource" />
+    <None Include="Resources\bib16d.png" />
+    <None Include="Resources\normal.png" />
+    <None Include="Resources\selected.png" />
+    <None Include="Resources\ppt16.png" />
+    <None Include="Resources\music16.png" />
+    <None Include="Resources\bib16.png" />
+    <None Include="Resources\video16.png" />
+    <None Include="Resources\over.png" />
+    <None Include="Resources\music16d.png" />
+    <None Include="Resources\video16d.png" />
+    <None Include="Resources\ppt16d.png" />
+    <None Include="Resources\icon_alert.gif" />
+    <None Include="Resources\icon_get_world.gif" />
+    <None Include="Resources\icon_info.gif" />
+    <None Include="Resources\icon_mail.gif" />
+    <None Include="Resources\newsettings.png" />
+    <None Include="Resources\slideritem.png" />
+    <None Include="Resources\sliderbg.png" />
+    <None Include="Resources\greenleft_n.png" />
+    <None Include="Resources\greenright_d.png" />
+    <None Include="Resources\greenright_n.png" />
+    <None Include="Resources\greenleft_d.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\accept.png" />
+    <None Include="Resources\arrow_divide.png" />
+    <None Include="Resources\indicator.gif" />
+    <None Include="Resources\whitepnl.png" />
+    <None Include="Resources\edit_n.png" />
+    <None Include="Resources\images.png" />
+    <None Include="Resources\images_d.png" />
+    <None Include="Resources\edit_d.png" />
+    <None Include="Resources\slider1.png" />
+    <None Include="Resources\slider2.png" />
+    <None Include="Resources\scrollslider.png" />
+    <None Include="Resources\scrollerdots.png" />
+    <None Include="Resources\blackscreen.png" />
+    <None Include="Resources\lightbulb.png" />
+    <None Include="Resources\information.png" />
+    <None Include="Resources\removeimage.png" />
+    <None Include="Resources\addimage.png" />
+    <None Include="Resources\copyright.png" />
+    <None Include="Resources\activate_btnover_ru.png" />
+    <None Include="Resources\activate_btn_ru.png" />
+    <None Include="Resources\activate_btndis_ru.png" />
+    <None Include="Resources\removefolder.png" />
+    <None Include="Resources\addfolder.png" />
+    <None Include="Resources\editfolder.png" />
+    <None Include="Resources\linkfolder.png" />
+    <None Include="Resources\unlinkfolder.png" />
+    <None Include="Resources\unlinkfolder_dis.png" />
+    <None Include="Resources\removefolderdis.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\refresh_dis.png" />
+    <None Include="Resources\removenote_dis.png" />
+    <None Include="Resources\addnote.png" />
+    <None Include="Resources\addnote_dis.png" />
+    <None Include="Resources\removenote.png" />
+    <None Include="Resources\image.png" />
+    <None Include="Resources\comment_edit.png" />
+    <None Include="Resources\cog.png" />
+    <None Include="Resources\image_d1.png" />
+    <None Include="Resources\image1.png" />
+    <None Include="Resources\save_dis.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\remove_dis.png" />
+    <None Include="Resources\remove.png" />
+    <None Include="Resources\hide_n.png" />
+    <None Include="Resources\ramp_d.png" />
+    <None Include="Resources\ramp_o.png" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PresenterDataset.xsc">
+      <DependentUpon>PresenterDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\activate_btnover.png" />
+    <None Include="Resources\activate_btnn.png" />
+    <None Include="Resources\activate_btnd.png" />
+    <None Include="Resources\close_o.png" />
+    <None Include="Resources\close_n.png" />
+    <None Include="Resources\font_d.png" />
+    <None Include="Resources\font_n.png" />
+    <None Include="Resources\accept_n.png" />
+    <None Include="Resources\accept_d.png" />
+    <None Include="Resources\add_d.png" />
+    <None Include="Resources\add_n.png" />
+    <None Include="Resources\up_d.png" />
+    <None Include="Resources\up_n.png" />
+    <None Include="Resources\back_n.png" />
+    <None Include="Resources\light_n.png" />
+    <None Include="Resources\image_n.png" />
+    <None Include="Resources\image_d.png" />
+    <None Include="Resources\editmusic_n.png" />
+    <None Include="Resources\light_d.png" />
+    <None Include="Resources\next_d.png" />
+    <None Include="Resources\next_n.png" />
+    <None Include="Resources\editmusic_d.png" />
+    <None Include="Resources\back_d.png" />
+    <None Include="Resources\popupbg.png" />
+    <None Include="Resources\panelbackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="content\Photocategories.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="FirebirdSql.Data.FirebirdClient">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="content\fullsize\" />
+    <Folder Include="content\previews\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>copy $(SolutionDir)..\3rdparty\fbembed.dll $(TargetDir)
+copy $(SolutionDir)..\3rdparty\ib_util.dll $(TargetDir)
+copy $(SolutionDir)..\3rdparty\icudt30.dll $(TargetDir)
+copy $(SolutionDir)..\3rdparty\icuin30.dll $(TargetDir)
+copy $(SolutionDir)..\3rdparty\icuuc30.dll $(TargetDir)
+copy $(SolutionDir)..\3rdparty\msvcp80.dll $(TargetDir)
+copy $(SolutionDir)..\3rdparty\msvcr80.dll $(TargetDir)
+mkdir $(TargetDir)intl
+copy $(SolutionDir)..\3rdparty\intl\fbintl.dll $(TargetDir)intl
+copy $(SolutionDir)..\3rdparty\intl\fbintl.conf $(TargetDir)intl</PostBuildEvent>
+  </PropertyGroup>
+</Project>

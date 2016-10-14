@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="startToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 22</value>
+  </data>
+  <data name="startToolStripMenuItem.Text" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="prepareToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 22</value>
+  </data>
+  <data name="prepareToolStripMenuItem.Text" xml:space="preserve">
+    <value>Prepare</value>
+  </data>
+  <data name="editToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 22</value>
+  </data>
+  <data name="editToolStripMenuItem.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="deleteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 22</value>
+  </data>
+  <data name="deleteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 92</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pnlInitTumbler.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt, style=Bold</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 10</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 15</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Please wait... loading data</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>pnlInitTumbler</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pbTumbler.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbTumbler.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 10</value>
+  </data>
+  <data name="pbTumbler.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="pbTumbler.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pbTumbler.Name" xml:space="preserve">
+    <value>pbTumbler</value>
+  </data>
+  <data name="&gt;&gt;pbTumbler.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbTumbler.Parent" xml:space="preserve">
+    <value>pnlInitTumbler</value>
+  </data>
+  <data name="&gt;&gt;pbTumbler.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnlInitTumbler.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, -395</value>
+  </data>
+  <data name="pnlInitTumbler.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 36</value>
+  </data>
+  <data name="pnlInitTumbler.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pnlInitTumbler.Name" xml:space="preserve">
+    <value>pnlInitTumbler</value>
+  </data>
+  <data name="&gt;&gt;pnlInitTumbler.Type" xml:space="preserve">
+    <value>Vendisoft.Controls.ThemedPanel, EmpowerPresenter, Version=2.1.3780.39611, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pnlInitTumbler.Parent" xml:space="preserve">
+    <value>pnlMidSection</value>
+  </data>
+  <data name="&gt;&gt;pnlInitTumbler.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="g.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="g.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="g.Size" type="System.Drawing.Size, System.Drawing">
+    <value>614, 260</value>
+  </data>
+  <data name="g.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="colNumber.HeaderText" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="colNumber.MappingName" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="colNumber.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="colTitle.HeaderText" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="colTitle.MappingName" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="colTitle.Width" type="System.Int32, mscorlib">
+    <value>275</value>
+  </data>
+  <data name="colChorus.HeaderText" xml:space="preserve">
+    <value>Chorus</value>
+  </data>
+  <data name="colChorus.MappingName" xml:space="preserve">
+    <value>Chorus</value>
+  </data>
+  <data name="colChorus.Width" type="System.Int32, mscorlib">
+    <value>275</value>
+  </data>
+  <data name="&gt;&gt;g.Name" xml:space="preserve">
+    <value>g</value>
+  </data>
+  <data name="&gt;&gt;g.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGrid, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;g.Parent" xml:space="preserve">
+    <value>pnlSongBrowser</value>
+  </data>
+  <data name="&gt;&gt;g.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlSongBrowser.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pnlSongBrowser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnlSongBrowser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>617, 263</value>
+  </data>
+  <data name="pnlSongBrowser.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pnlSongBrowser.Name" xml:space="preserve">
+    <value>pnlSongBrowser</value>
+  </data>
+  <data name="&gt;&gt;pnlSongBrowser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlSongBrowser.Parent" xml:space="preserve">
+    <value>pnlMidSection</value>
+  </data>
+  <data name="&gt;&gt;pnlSongBrowser.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="fullSongPreview.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="fullSongPreview.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 32</value>
+  </data>
+  <data name="fullSongPreview.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 225</value>
+  </data>
+  <data name="fullSongPreview.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="fullSongPreview.Text" xml:space="preserve">
+    <value>fullSongPreviewControl1</value>
+  </data>
+  <data name="&gt;&gt;fullSongPreview.Name" xml:space="preserve">
+    <value>fullSongPreview</value>
+  </data>
+  <data name="&gt;&gt;fullSongPreview.Type" xml:space="preserve">
+    <value>EmpowerPresenter.FullSongPreviewControl, EmpowerPresenter, Version=2.1.3780.39611, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fullSongPreview.Parent" xml:space="preserve">
+    <value>pnlSearchSelection</value>
+  </data>
+  <data name="&gt;&gt;fullSongPreview.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblSort.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lblSort.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSort.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblSort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 9</value>
+  </data>
+  <data name="lblSort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 15</value>
+  </data>
+  <data name="lblSort.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="lblSort.Text" xml:space="preserve">
+    <value>Sort:</value>
+  </data>
+  <data name="lblSort.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblSort.Name" xml:space="preserve">
+    <value>lblSort</value>
+  </data>
+  <data name="&gt;&gt;lblSort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSort.Parent" xml:space="preserve">
+    <value>pnlSearchSelection</value>
+  </data>
+  <data name="&gt;&gt;lblSort.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rNoSort.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="rNoSort.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rNoSort.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rNoSort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>494, 7</value>
+  </data>
+  <data name="rNoSort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 19</value>
+  </data>
+  <data name="rNoSort.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="rNoSort.Text" xml:space="preserve">
+    <value>Numeric</value>
+  </data>
+  <data name="rNoSort.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;rNoSort.Name" xml:space="preserve">
+    <value>rNoSort</value>
+  </data>
+  <data name="&gt;&gt;rNoSort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rNoSort.Parent" xml:space="preserve">
+    <value>pnlSearchSelection</value>
+  </data>
+  <data name="&gt;&gt;rNoSort.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rRelevent.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="rRelevent.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rRelevent.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rRelevent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 7</value>
+  </data>
+  <data name="rRelevent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 19</value>
+  </data>
+  <data name="rRelevent.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="rRelevent.Text" xml:space="preserve">
+    <value>Relevancy</value>
+  </data>
+  <data name="rRelevent.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;rRelevent.Name" xml:space="preserve">
+    <value>rRelevent</value>
+  </data>
+  <data name="&gt;&gt;rRelevent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rRelevent.Parent" xml:space="preserve">
+    <value>pnlSearchSelection</value>
+  </data>
+  <data name="&gt;&gt;rRelevent.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnSearchClose.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnSearchClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>580, 5</value>
+  </data>
+  <data name="btnSearchClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 23</value>
+  </data>
+  <data name="btnSearchClose.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="btnSearchClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;btnSearchClose.Name" xml:space="preserve">
+    <value>btnSearchClose</value>
+  </data>
+  <data name="&gt;&gt;btnSearchClose.Type" xml:space="preserve">
+    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=2.1.3780.39611, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnSearchClose.Parent" xml:space="preserve">
+    <value>pnlSearchSelection</value>
+  </data>
+  <data name="&gt;&gt;btnSearchClose.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lbSearchResults.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="lbSearchResults.IntegralHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lbSearchResults.ItemHeight" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lbSearchResults.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 32</value>
+  </data>
+  <data name="lbSearchResults.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 225</value>
+  </data>
+  <data name="lbSearchResults.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbSearchResults.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lbSearchResults.Name" xml:space="preserve">
+    <value>lbSearchResults</value>
+  </data>
+  <data name="&gt;&gt;lbSearchResults.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbSearchResults.Parent" xml:space="preserve">
+    <value>pnlSearchSelection</value>
+  </data>
+  <data name="&gt;&gt;lbSearchResults.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblTitleSearchResults.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt, style=Bold</value>
+  </data>
+  <data name="lblTitleSearchResults.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTitleSearchResults.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 9</value>
+  </data>
+  <data name="lblTitleSearchResults.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 15</value>
+  </data>
+  <data name="lblTitleSearchResults.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblTitleSearchResults.Text" xml:space="preserve">
+    <value>Search results</value>
+  </data>
+  <data name="&gt;&gt;lblTitleSearchResults.Name" xml:space="preserve">
+    <value>lblTitleSearchResults</value>
+  </data>
+  <data name="&gt;&gt;lblTitleSearchResults.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTitleSearchResults.Parent" xml:space="preserve">
+    <value>pnlSearchSelection</value>
+  </data>
+  <data name="&gt;&gt;lblTitleSearchResults.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pnlSearchSelection.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pnlSearchSelection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnlSearchSelection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>617, 263</value>
+  </data>
+  <data name="pnlSearchSelection.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;pnlSearchSelection.Name" xml:space="preserve">
+    <value>pnlSearchSelection</value>
+  </data>
+  <data name="&gt;&gt;pnlSearchSelection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlSearchSelection.Parent" xml:space="preserve">
+    <value>pnlMidSection</value>
+  </data>
+  <data name="&gt;&gt;pnlSearchSelection.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnlMidSection.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pnlMidSection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 127</value>
+  </data>
+  <data name="pnlMidSection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>617, 263</value>
+  </data>
+  <data name="pnlMidSection.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;pnlMidSection.Name" xml:space="preserve">
+    <value>pnlMidSection</value>
+  </data>
+  <data name="&gt;&gt;pnlMidSection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlMidSection.Parent" xml:space="preserve">
+    <value>themedPanel1</value>
+  </data>
+  <data name="&gt;&gt;pnlMidSection.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="btnCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 6</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 26</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnDisplay.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnDisplay.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnDisplay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnDisplay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>508, 6</value>
+  </data>
+  <data name="btnDisplay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 26</value>
+  </data>
+  <data name="btnDisplay.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnDisplay.Text" xml:space="preserve">
+    <value>Display Song</value>
+  </data>
+  <data name="&gt;&gt;btnDisplay.Name" xml:space="preserve">
+    <value>btnDisplay</value>
+  </data>
+  <data name="&gt;&gt;btnDisplay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDisplay.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
+  </data>
+  <data name="&gt;&gt;btnDisplay.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnPrepare.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnPrepare.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnPrepare.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnPrepare.Location" type="System.Drawing.Point, System.Drawing">
+    <value>406, 6</value>
+  </data>
+  <data name="btnPrepare.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 26</value>
+  </data>
+  <data name="btnPrepare.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnPrepare.Text" xml:space="preserve">
+    <value>Prepare</value>
+  </data>
+  <data name="&gt;&gt;btnPrepare.Name" xml:space="preserve">
+    <value>btnPrepare</value>
+  </data>
+  <data name="&gt;&gt;btnPrepare.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPrepare.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
+  </data>
+  <data name="&gt;&gt;btnPrepare.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="pnlBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 390</value>
+  </data>
+  <data name="pnlBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>617, 42</value>
+  </data>
+  <data name="pnlBottom.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;pnlBottom.Name" xml:space="preserve">
+    <value>pnlBottom</value>
+  </data>
+  <data name="&gt;&gt;pnlBottom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlBottom.Parent" xml:space="preserve">
+    <value>themedPanel1</value>
+  </data>
+  <data name="&gt;&gt;pnlBottom.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="AddSongNoteLinklb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AddSongNoteLinklb.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="AddSongNoteLinklb.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>23, 33</value>
+  </data>
+  <data name="AddSongNoteLinklb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 107</value>
+  </data>
+  <data name="AddSongNoteLinklb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 19</value>
+  </data>
+  <data name="AddSongNoteLinklb.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="AddSongNoteLinklb.Text" xml:space="preserve">
+    <value>To add a note for song click here</value>
+  </data>
+  <data name="&gt;&gt;AddSongNoteLinklb.Name" xml:space="preserve">
+    <value>AddSongNoteLinklb</value>
+  </data>
+  <data name="&gt;&gt;AddSongNoteLinklb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AddSongNoteLinklb.Parent" xml:space="preserve">
+    <value>pnlTop</value>
+  </data>
+  <data name="&gt;&gt;AddSongNoteLinklb.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnSearchGo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnSearchGo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>580, 37</value>
+  </data>
+  <data name="btnSearchGo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 23</value>
+  </data>
+  <data name="btnSearchGo.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="btnSearchGo.Text" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="&gt;&gt;btnSearchGo.Name" xml:space="preserve">
+    <value>btnSearchGo</value>
+  </data>
+  <data name="&gt;&gt;btnSearchGo.Type" xml:space="preserve">
+    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=2.1.3780.39611, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnSearchGo.Parent" xml:space="preserve">
+    <value>pnlTop</value>
+  </data>
+  <data name="&gt;&gt;btnSearchGo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt, style=Bold</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 39</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 17</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Fulltext search:</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>pnlTop</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtFulltextSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtFulltextSearch.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtFulltextSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 38</value>
+  </data>
+  <data name="txtFulltextSearch.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtFulltextSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>436, 21</value>
+  </data>
+  <data name="txtFulltextSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtFulltextSearch.Name" xml:space="preserve">
+    <value>txtFulltextSearch</value>
+  </data>
+  <data name="&gt;&gt;txtFulltextSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtFulltextSearch.Parent" xml:space="preserve">
+    <value>pnlTop</value>
+  </data>
+  <data name="&gt;&gt;txtFulltextSearch.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pictureBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 86</value>
+  </data>
+  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
+    <value>pictureBox3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
+    <value>pnlTop</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 107</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>pnlTop</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 64</value>
+  </data>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>pnlTop</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="llAttachPPT.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="llAttachPPT.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="llAttachPPT.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>51, 10</value>
+  </data>
+  <data name="llAttachPPT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 86</value>
+  </data>
+  <data name="llAttachPPT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>359, 19</value>
+  </data>
+  <data name="llAttachPPT.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="llAttachPPT.Text" xml:space="preserve">
+    <value>To associate a Powerpoint presentation with a song click here.</value>
+  </data>
+  <data name="&gt;&gt;llAttachPPT.Name" xml:space="preserve">
+    <value>llAttachPPT</value>
+  </data>
+  <data name="&gt;&gt;llAttachPPT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;llAttachPPT.Parent" xml:space="preserve">
+    <value>pnlTop</value>
+  </data>
+  <data name="&gt;&gt;llAttachPPT.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="llNewSong.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="llNewSong.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="llNewSong.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>18, 29</value>
+  </data>
+  <data name="llNewSong.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 64</value>
+  </data>
+  <data name="llNewSong.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 19</value>
+  </data>
+  <data name="llNewSong.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="llNewSong.Text" xml:space="preserve">
+    <value>To add a new song click here.</value>
+  </data>
+  <data name="&gt;&gt;llNewSong.Name" xml:space="preserve">
+    <value>llNewSong</value>
+  </data>
+  <data name="&gt;&gt;llNewSong.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;llNewSong.Parent" xml:space="preserve">
+    <value>pnlTop</value>
+  </data>
+  <data name="&gt;&gt;llNewSong.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txtSongsSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtSongsSearch.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtSongsSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 11</value>
+  </data>
+  <data name="txtSongsSearch.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtSongsSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>466, 21</value>
+  </data>
+  <data name="txtSongsSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtSongsSearch.Name" xml:space="preserve">
+    <value>txtSongsSearch</value>
+  </data>
+  <data name="&gt;&gt;txtSongsSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtSongsSearch.Parent" xml:space="preserve">
+    <value>pnlTop</value>
+  </data>
+  <data name="&gt;&gt;txtSongsSearch.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt, style=Bold</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 13</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 17</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Quick search:</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>pnlTop</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="llDetach.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="llDetach.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="llDetach.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>71, 10</value>
+  </data>
+  <data name="llDetach.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 86</value>
+  </data>
+  <data name="llDetach.Size" type="System.Drawing.Size, System.Drawing">
+    <value>471, 19</value>
+  </data>
+  <data name="llDetach.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="llDetach.Text" xml:space="preserve">
+    <value>The currently selected song is associated with a Powerpoint. To detach click here.</value>
+  </data>
+  <data name="llDetach.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;llDetach.Name" xml:space="preserve">
+    <value>llDetach</value>
+  </data>
+  <data name="&gt;&gt;llDetach.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;llDetach.Parent" xml:space="preserve">
+    <value>pnlTop</value>
+  </data>
+  <data name="&gt;&gt;llDetach.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="pnlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="pnlTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnlTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>617, 127</value>
+  </data>
+  <data name="pnlTop.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;pnlTop.Name" xml:space="preserve">
+    <value>pnlTop</value>
+  </data>
+  <data name="&gt;&gt;pnlTop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlTop.Parent" xml:space="preserve">
+    <value>themedPanel1</value>
+  </data>
+  <data name="&gt;&gt;pnlTop.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="themedPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="themedPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="themedPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>617, 432</value>
+  </data>
+  <data name="themedPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;themedPanel1.Name" xml:space="preserve">
+    <value>themedPanel1</value>
+  </data>
+  <data name="&gt;&gt;themedPanel1.Type" xml:space="preserve">
+    <value>Vendisoft.Controls.ThemedPanel, EmpowerPresenter, Version=2.1.3780.39611, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;themedPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;themedPanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dataGridTextBoxColumn3.HeaderText" xml:space="preserve">
+    <value>Chorus</value>
+  </data>
+  <data name="dataGridTextBoxColumn3.MappingName" xml:space="preserve">
+    <value>Chorus</value>
+  </data>
+  <data name="dataGridTextBoxColumn3.Width" type="System.Int32, mscorlib">
+    <value>275</value>
+  </data>
+  <data name="dataGridTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="dataGridTextBoxColumn2.MappingName" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="dataGridTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>275</value>
+  </data>
+  <data name="dataGridTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="dataGridTextBoxColumn1.MappingName" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="dataGridTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>617, 432</value>
+  </data>
+  <data name="&gt;&gt;startToolStripMenuItem.Name" xml:space="preserve">
+    <value>startToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;startToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;prepareToolStripMenuItem.Name" xml:space="preserve">
+    <value>prepareToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;prepareToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editToolStripMenuItem.Name" xml:space="preserve">
+    <value>editToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;editToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;deleteToolStripMenuItem.Name" xml:space="preserve">
+    <value>deleteToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;deleteToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridTableStyle1.Name" xml:space="preserve">
+    <value>dataGridTableStyle1</value>
+  </data>
+  <data name="&gt;&gt;dataGridTableStyle1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridTableStyle, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colNumber.Name" xml:space="preserve">
+    <value>colNumber</value>
+  </data>
+  <data name="&gt;&gt;colNumber.Type" xml:space="preserve">
+    <value>EmpowerPresenter.DataGridNoActiveCellColumn, EmpowerPresenter, Version=2.1.3780.39611, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colTitle.Name" xml:space="preserve">
+    <value>colTitle</value>
+  </data>
+  <data name="&gt;&gt;colTitle.Type" xml:space="preserve">
+    <value>EmpowerPresenter.DataGridNoActiveCellColumn, EmpowerPresenter, Version=2.1.3780.39611, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colChorus.Name" xml:space="preserve">
+    <value>colChorus</value>
+  </data>
+  <data name="&gt;&gt;colChorus.Type" xml:space="preserve">
+    <value>EmpowerPresenter.DataGridNoActiveCellColumn, EmpowerPresenter, Version=2.1.3780.39611, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dataGridTextBoxColumn3.Name" xml:space="preserve">
+    <value>dataGridTextBoxColumn3</value>
+  </data>
+  <data name="&gt;&gt;dataGridTextBoxColumn3.Type" xml:space="preserve">
+    <value>EmpowerPresenter.DataGridNoActiveCellColumn, EmpowerPresenter, Version=2.1.3780.39611, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dataGridTextBoxColumn2.Name" xml:space="preserve">
+    <value>dataGridTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;dataGridTextBoxColumn2.Type" xml:space="preserve">
+    <value>EmpowerPresenter.DataGridNoActiveCellColumn, EmpowerPresenter, Version=2.1.3780.39611, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dataGridTextBoxColumn1.Name" xml:space="preserve">
+    <value>dataGridTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;dataGridTextBoxColumn1.Type" xml:space="preserve">
+    <value>EmpowerPresenter.DataGridNoActiveCellColumn, EmpowerPresenter, Version=2.1.3780.39611, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SongSearchPnl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
