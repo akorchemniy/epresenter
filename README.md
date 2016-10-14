@@ -5,13 +5,14 @@ ePresenter is a popular church application in the bilingual Slavic community. It
 http://vendisoft.biz/epresenter/documentation/bible_searching.html
 
 ## Development pre-requisites 
-- To use Entity Framework: 
-     - http://stackoverflow.com/questions/1412086/how-to-register-firebird-data-provider-for-entity-framework
  - Firebird
      - Firebird embedded is in 3rdparty.
-     - Firebird .net client is required
+     - Firebird .net client is required (see 3rdparty for MSI known to be compatible)
      - Firebird Maestro can be used to edit the database
- - You must have DDEX installed. Google
+
+## Developer notes
+ - To use Entity Framework: 
+     - http://stackoverflow.com/questions/1412086/how-to-register-firebird-data-provider-for-entity-framework
      - http://www.firebirdsql.org/firebirdtutorial/firebird-data-access-designer-ddex-installation.html
 
 ## Known issues
