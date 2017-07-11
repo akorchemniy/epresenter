@@ -133,22 +133,22 @@
   <data name="fileToolStripMenuItem.Text" xml:space="preserve">
     <value>File</value>
   </data>
-  <data name="englishKJVToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 22</value>
+  <data name="toolStripMenuItem1stKJV.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 22</value>
   </data>
-  <data name="englishKJVToolStripMenuItem.Text" xml:space="preserve">
+  <data name="toolStripMenuItem1stKJV.Text" xml:space="preserve">
     <value>English - KJV</value>
   </data>
-  <data name="russianToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 22</value>
+  <data name="toolStripMenuItem1stRussian.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 22</value>
   </data>
-  <data name="russianToolStripMenuItem.Text" xml:space="preserve">
+  <data name="toolStripMenuItem1stRussian.Text" xml:space="preserve">
     <value>Russian</value>
   </data>
-  <data name="ukrainianToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 22</value>
+  <data name="toolStripMenuItem1stUkrainian.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 22</value>
   </data>
-  <data name="ukrainianToolStripMenuItem.Text" xml:space="preserve">
+  <data name="toolStripMenuItem1stUkrainian.Text" xml:space="preserve">
     <value>Ukrainian</value>
   </data>
   <data name="primaryTranslationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
@@ -157,53 +157,86 @@
   <data name="primaryTranslationToolStripMenuItem.Text" xml:space="preserve">
     <value>Primary translation</value>
   </data>
-  <data name="noneToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 22</value>
+  <data name="toolStripMenuItem2ndNone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 22</value>
   </data>
-  <data name="noneToolStripMenuItem.Text" xml:space="preserve">
+  <data name="toolStripMenuItem2ndNone.Text" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 6</value>
+  </data>
+  <data name="toolStripMenuItem2ndKJV.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 22</value>
+  </data>
+  <data name="toolStripMenuItem2ndKJV.Text" xml:space="preserve">
+    <value>English - KJV</value>
+  </data>
+  <data name="toolStripMenuItem2ndRussian.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 22</value>
+  </data>
+  <data name="toolStripMenuItem2ndRussian.Text" xml:space="preserve">
+    <value>Russian</value>
+  </data>
+  <data name="toolStripMenuItem2ndUkrainian.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 22</value>
+  </data>
+  <data name="toolStripMenuItem2ndUkrainian.Text" xml:space="preserve">
+    <value>Ukrainian</value>
+  </data>
+  <data name="toolStripMenuItem6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 22</value>
+  </data>
+  <data name="toolStripMenuItem6.Text" xml:space="preserve">
+    <value>Second translation</value>
+  </data>
+  <data name="toolStripMenuItem3rdNone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 22</value>
+  </data>
+  <data name="toolStripMenuItem3rdNone.Text" xml:space="preserve">
     <value>None</value>
   </data>
   <data name="toolStripMenuItem5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 6</value>
+    <value>139, 6</value>
   </data>
-  <data name="englishKJVToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 22</value>
+  <data name="toolStripMenuItem3rdKJV.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 22</value>
   </data>
-  <data name="englishKJVToolStripMenuItem1.Text" xml:space="preserve">
+  <data name="toolStripMenuItem3rdKJV.Text" xml:space="preserve">
     <value>English - KJV</value>
   </data>
-  <data name="russianToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 22</value>
+  <data name="toolStripMenuItem3rdRussian.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 22</value>
   </data>
-  <data name="russianToolStripMenuItem1.Text" xml:space="preserve">
+  <data name="toolStripMenuItem3rdRussian.Text" xml:space="preserve">
     <value>Russian</value>
   </data>
-  <data name="ukrainianToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 22</value>
+  <data name="toolStripMenuItem3rdUkrainian.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 22</value>
   </data>
-  <data name="ukrainianToolStripMenuItem1.Text" xml:space="preserve">
+  <data name="toolStripMenuItem3rdUkrainian.Text" xml:space="preserve">
     <value>Ukrainian</value>
   </data>
   <data name="secondaryTranslationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 22</value>
   </data>
   <data name="secondaryTranslationToolStripMenuItem.Text" xml:space="preserve">
-    <value>Secondary translation</value>
+    <value>Third translation</value>
   </data>
   <data name="verseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="verseToolStripMenuItem.Text" xml:space="preserve">
     <value>1 Verse</value>
   </data>
-  <data name="versesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 22</value>
+  <data name="toolStripMenuItem2Verses.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
   </data>
-  <data name="versesToolStripMenuItem.Text" xml:space="preserve">
+  <data name="toolStripMenuItem2Verses.Text" xml:space="preserve">
     <value>2 Verses</value>
   </data>
   <data name="fitByFontSizeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="fitByFontSizeToolStripMenuItem.Text" xml:space="preserve">
     <value>Fit by font size</value>
@@ -442,7 +475,7 @@
     <value>btnSmoothTransitions</value>
   </data>
   <data name="&gt;&gt;btnSmoothTransitions.Type" xml:space="preserve">
-    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=2.1.3809.20455, Culture=neutral, PublicKeyToken=null</value>
+    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnSmoothTransitions.Parent" xml:space="preserve">
     <value>pnlTop</value>
@@ -458,61 +491,61 @@
   </data>
   <data name="bntPinBackground.NormalImg" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
+        rkJggg==
 </value>
   </data>
   <data name="bntPinBackground.OverImg" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
+        rkJggg==
 </value>
   </data>
   <data name="bntPinBackground.PressedImg" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
+        AAAASUVORK5CYII=
 </value>
   </data>
   <data name="bntPinBackground.Size" type="System.Drawing.Size, System.Drawing">
@@ -528,7 +561,7 @@
     <value>bntPinBackground</value>
   </data>
   <data name="&gt;&gt;bntPinBackground.Type" xml:space="preserve">
-    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=2.1.3809.20455, Culture=neutral, PublicKeyToken=null</value>
+    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;bntPinBackground.Parent" xml:space="preserve">
     <value>pnlTop</value>
@@ -579,7 +612,7 @@
     <value>btnScroller</value>
   </data>
   <data name="&gt;&gt;btnScroller.Type" xml:space="preserve">
-    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.3809.20455, Culture=neutral, PublicKeyToken=null</value>
+    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnScroller.Parent" xml:space="preserve">
     <value>pnlTop</value>
@@ -669,7 +702,7 @@
     <value>btnAnouncement</value>
   </data>
   <data name="&gt;&gt;btnAnouncement.Type" xml:space="preserve">
-    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.3809.20455, Culture=neutral, PublicKeyToken=null</value>
+    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnAnouncement.Parent" xml:space="preserve">
     <value>pnlTop</value>
@@ -696,7 +729,7 @@
     <value>btnHideDisplay</value>
   </data>
   <data name="&gt;&gt;btnHideDisplay.Type" xml:space="preserve">
-    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=2.1.3809.20455, Culture=neutral, PublicKeyToken=null</value>
+    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnHideDisplay.Parent" xml:space="preserve">
     <value>pnlTop</value>
@@ -759,7 +792,7 @@
     <value>btnSongs</value>
   </data>
   <data name="&gt;&gt;btnSongs.Type" xml:space="preserve">
-    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.3809.20455, Culture=neutral, PublicKeyToken=null</value>
+    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnSongs.Parent" xml:space="preserve">
     <value>pnlTop</value>
@@ -786,7 +819,7 @@
     <value>btnBlackScreen</value>
   </data>
   <data name="&gt;&gt;btnBlackScreen.Type" xml:space="preserve">
-    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=2.1.3809.20455, Culture=neutral, PublicKeyToken=null</value>
+    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnBlackScreen.Parent" xml:space="preserve">
     <value>pnlTop</value>
@@ -813,7 +846,7 @@
     <value>btnImage</value>
   </data>
   <data name="&gt;&gt;btnImage.Type" xml:space="preserve">
-    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.3809.20455, Culture=neutral, PublicKeyToken=null</value>
+    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnImage.Parent" xml:space="preserve">
     <value>pnlTop</value>
@@ -876,7 +909,7 @@
     <value>btnBible</value>
   </data>
   <data name="&gt;&gt;btnBible.Type" xml:space="preserve">
-    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.3809.20455, Culture=neutral, PublicKeyToken=null</value>
+    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnBible.Parent" xml:space="preserve">
     <value>pnlTop</value>
@@ -1068,7 +1101,7 @@
     <value>songSearchPnl1</value>
   </data>
   <data name="&gt;&gt;songSearchPnl1.Type" xml:space="preserve">
-    <value>EmpowerPresenter.SongSearchPnl, EmpowerPresenter, Version=2.1.3809.20455, Culture=neutral, PublicKeyToken=null</value>
+    <value>EmpowerPresenter.SongSearchPnl, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;songSearchPnl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1098,7 +1131,7 @@
     <value>bibleSearchPnl1</value>
   </data>
   <data name="&gt;&gt;bibleSearchPnl1.Type" xml:space="preserve">
-    <value>EmpowerPresenter.BibleSearchPnl, EmpowerPresenter, Version=2.1.3809.20455, Culture=neutral, PublicKeyToken=null</value>
+    <value>EmpowerPresenter.BibleSearchPnl, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;bibleSearchPnl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1128,7 +1161,7 @@
     <value>scrollerSearchPnl1</value>
   </data>
   <data name="&gt;&gt;scrollerSearchPnl1.Type" xml:space="preserve">
-    <value>EmpowerPresenter.ScrollerSearchPnl, EmpowerPresenter, Version=2.1.3809.20455, Culture=neutral, PublicKeyToken=null</value>
+    <value>EmpowerPresenter.ScrollerSearchPnl, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;scrollerSearchPnl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1158,7 +1191,7 @@
     <value>anouncementSearchPnl1</value>
   </data>
   <data name="&gt;&gt;anouncementSearchPnl1.Type" xml:space="preserve">
-    <value>EmpowerPresenter.AnouncementSearchPnl, EmpowerPresenter, Version=2.1.3809.20455, Culture=neutral, PublicKeyToken=null</value>
+    <value>EmpowerPresenter.AnouncementSearchPnl, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;anouncementSearchPnl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1279,22 +1312,58 @@
   <data name="&gt;&gt;primaryTranslationToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;englishKJVToolStripMenuItem.Name" xml:space="preserve">
-    <value>englishKJVToolStripMenuItem</value>
+  <data name="&gt;&gt;toolStripMenuItem1stKJV.Name" xml:space="preserve">
+    <value>toolStripMenuItem1stKJV</value>
   </data>
-  <data name="&gt;&gt;englishKJVToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;toolStripMenuItem1stKJV.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;russianToolStripMenuItem.Name" xml:space="preserve">
-    <value>russianToolStripMenuItem</value>
+  <data name="&gt;&gt;toolStripMenuItem1stRussian.Name" xml:space="preserve">
+    <value>toolStripMenuItem1stRussian</value>
   </data>
-  <data name="&gt;&gt;russianToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;toolStripMenuItem1stRussian.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ukrainianToolStripMenuItem.Name" xml:space="preserve">
-    <value>ukrainianToolStripMenuItem</value>
+  <data name="&gt;&gt;toolStripMenuItem1stUkrainian.Name" xml:space="preserve">
+    <value>toolStripMenuItem1stUkrainian</value>
   </data>
-  <data name="&gt;&gt;ukrainianToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;toolStripMenuItem1stUkrainian.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem6.Name" xml:space="preserve">
+    <value>toolStripMenuItem6</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2ndNone.Name" xml:space="preserve">
+    <value>toolStripMenuItem2ndNone</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2ndNone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2ndKJV.Name" xml:space="preserve">
+    <value>toolStripMenuItem2ndKJV</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2ndKJV.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2ndRussian.Name" xml:space="preserve">
+    <value>toolStripMenuItem2ndRussian</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2ndRussian.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2ndUkrainian.Name" xml:space="preserve">
+    <value>toolStripMenuItem2ndUkrainian</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2ndUkrainian.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;secondaryTranslationToolStripMenuItem.Name" xml:space="preserve">
@@ -1303,10 +1372,10 @@
   <data name="&gt;&gt;secondaryTranslationToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;noneToolStripMenuItem.Name" xml:space="preserve">
-    <value>noneToolStripMenuItem</value>
+  <data name="&gt;&gt;toolStripMenuItem3rdNone.Name" xml:space="preserve">
+    <value>toolStripMenuItem3rdNone</value>
   </data>
-  <data name="&gt;&gt;noneToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;toolStripMenuItem3rdNone.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem5.Name" xml:space="preserve">
@@ -1315,22 +1384,22 @@
   <data name="&gt;&gt;toolStripMenuItem5.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;englishKJVToolStripMenuItem1.Name" xml:space="preserve">
-    <value>englishKJVToolStripMenuItem1</value>
+  <data name="&gt;&gt;toolStripMenuItem3rdKJV.Name" xml:space="preserve">
+    <value>toolStripMenuItem3rdKJV</value>
   </data>
-  <data name="&gt;&gt;englishKJVToolStripMenuItem1.Type" xml:space="preserve">
+  <data name="&gt;&gt;toolStripMenuItem3rdKJV.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;russianToolStripMenuItem1.Name" xml:space="preserve">
-    <value>russianToolStripMenuItem1</value>
+  <data name="&gt;&gt;toolStripMenuItem3rdRussian.Name" xml:space="preserve">
+    <value>toolStripMenuItem3rdRussian</value>
   </data>
-  <data name="&gt;&gt;russianToolStripMenuItem1.Type" xml:space="preserve">
+  <data name="&gt;&gt;toolStripMenuItem3rdRussian.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ukrainianToolStripMenuItem1.Name" xml:space="preserve">
-    <value>ukrainianToolStripMenuItem1</value>
+  <data name="&gt;&gt;toolStripMenuItem3rdUkrainian.Name" xml:space="preserve">
+    <value>toolStripMenuItem3rdUkrainian</value>
   </data>
-  <data name="&gt;&gt;ukrainianToolStripMenuItem1.Type" xml:space="preserve">
+  <data name="&gt;&gt;toolStripMenuItem3rdUkrainian.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;numberOfVersesToDisplayToolStripMenuItem.Name" xml:space="preserve">
@@ -1345,10 +1414,10 @@
   <data name="&gt;&gt;verseToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;versesToolStripMenuItem.Name" xml:space="preserve">
-    <value>versesToolStripMenuItem</value>
+  <data name="&gt;&gt;toolStripMenuItem2Verses.Name" xml:space="preserve">
+    <value>toolStripMenuItem2Verses</value>
   </data>
-  <data name="&gt;&gt;versesToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;toolStripMenuItem2Verses.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;fitByFontSizeToolStripMenuItem.Name" xml:space="preserve">

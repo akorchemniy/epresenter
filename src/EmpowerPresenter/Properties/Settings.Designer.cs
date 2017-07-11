@@ -177,5 +177,17 @@ namespace EmpowerPresenter.Properties {
                 this["HideContentOnMin"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string BibleTertiaryTranslation {
+            get {
+                return ((string)(this["BibleTertiaryTranslation"]));
+            }
+            set {
+                this["BibleTertiaryTranslation"] = value;
+            }
+        }
     }
 }

@@ -225,11 +225,6 @@
     <Compile Include="Dialogs\ErrorDlg.Designer.cs">
       <DependentUpon>ErrorDlg.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Projects\Anouncement\AnouncementSearchPnl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -726,10 +721,6 @@
       <LastGenOutput>PresenterDataset.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
-    <EntityDeploy Include="Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <None Include="PresenterDataset.xss">
       <DependentUpon>PresenterDataset.xsd</DependentUpon>
     </None>

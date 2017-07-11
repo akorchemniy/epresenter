@@ -225,6 +225,24 @@ namespace EmpowerPresenter
                 }
             }
         }
+        public string BibleTertiaryTranslation
+        {
+            get
+            {
+                return Properties.Settings.Default.BibleTertiaryTranslation;
+            }
+            set
+            {
+                if (BibleTertiaryTranslation != value)
+                {
+                    Properties.Settings.Default.BibleTertiaryTranslation = value;
+                    Properties.Settings.Default.Save();
+
+                    if (BibleFormatChanged != null)
+                        BibleFormatChanged(null, null);
+                }
+            }
+        }
         public bool UseBlackBackdrop
         {
             get

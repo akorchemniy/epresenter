@@ -158,6 +158,7 @@ namespace EmpowerPresenter
         {
             this.selectTranslationPrimary(Program.ConfigHelper.BiblePrimaryTranslation);
             this.selectTranslationSecondary(Program.ConfigHelper.BibleSecondaryTranslation);
+            this.selectTranslationTertiary(Program.ConfigHelper.BibleTertiaryTranslation);
             this.selectDisplayVerse(Program.ConfigHelper.BibleNumVerses);
             this.setCurrentLanguage();
             if (Program.ConfigHelper.UseBlackBackdrop)
@@ -172,6 +173,7 @@ namespace EmpowerPresenter
         {
             selectTranslationPrimary(Program.ConfigHelper.BiblePrimaryTranslation);
             selectTranslationSecondary(Program.ConfigHelper.BibleSecondaryTranslation);
+            selectTranslationTertiary(Program.ConfigHelper.BibleTertiaryTranslation);
             selectDisplayVerse(Program.ConfigHelper.BibleNumVerses);
         }
         private void Main_Load(object sender, EventArgs e)
@@ -922,9 +924,9 @@ namespace EmpowerPresenter
         }
         private void selectTranslationPrimary(int i)
         {
-            englishKJVToolStripMenuItem.Checked = i == 0 ? true : false;
-            russianToolStripMenuItem.Checked = i == 1 ? true : false;
-            ukrainianToolStripMenuItem.Checked = i == 2 ? true : false;
+            toolStripMenuItem1stKJV.Checked = i == 0 ? true : false;
+            toolStripMenuItem1stRussian.Checked = i == 1 ? true : false;
+            toolStripMenuItem1stUkrainian.Checked = i == 2 ? true : false;
             if (Program.ConfigHelper.BiblePrimaryTranslation != getTranslationPrimary())
             {
                 Program.ConfigHelper.BiblePrimaryTranslation = getTranslationPrimary();
@@ -944,38 +946,38 @@ namespace EmpowerPresenter
         }
         private string getTranslationPrimary()
         {
-            if (englishKJVToolStripMenuItem.Checked == true)
+            if (toolStripMenuItem1stKJV.Checked == true)
                 return "KJV";
-            else if (russianToolStripMenuItem.Checked == true)
+            else if (toolStripMenuItem1stRussian.Checked == true)
                 return "RST";
             else
                 return "UK";
         }
 
         // Secondary translation
-        private void noneToolStripMenuItem_Click(object sender, EventArgs e)
+        private void toolStripMenuItem2ndNone_Click(object sender, EventArgs e)
         {
             selectTranslationSecondary(0);
         }
-        private void englishKJVToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void toolStripMenuItem2ndKJV_Click(object sender, EventArgs e)
         {
             selectTranslationSecondary(1);
         }
-        private void russianToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void toolStripMenuItem2ndRussian_Click(object sender, EventArgs e)
         {
             selectTranslationSecondary(2);
         }
-        private void ukrainianToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void toolStripMenuItem2ndUkrainian_Click(object sender, EventArgs e)
         {
             selectTranslationSecondary(3);
         }
         private void selectTranslationSecondary(int i)
         {
-            numberOfVersesToDisplayToolStripMenuItem.Visible = i == 0 ? true : false;
-            noneToolStripMenuItem.Checked = i == 0 ? true : false;
-            englishKJVToolStripMenuItem1.Checked = i == 1 ? true : false;
-            russianToolStripMenuItem1.Checked = i == 2 ? true : false;
-            ukrainianToolStripMenuItem1.Checked = i == 3 ? true : false;
+            numberOfVersesToDisplayToolStripMenuItem.Visible = i == 0 ? true : false; // Multi verse only for single translation
+            toolStripMenuItem2ndNone.Checked = i == 0 ? true : false;
+            toolStripMenuItem2ndKJV.Checked = i == 1 ? true : false;
+            toolStripMenuItem2ndRussian.Checked = i == 2 ? true : false;
+            toolStripMenuItem2ndUkrainian.Checked = i == 3 ? true : false;
             if (Program.ConfigHelper.BibleSecondaryTranslation != getTranslationSecondary())
             {
                 Program.ConfigHelper.BibleSecondaryTranslation = getTranslationSecondary();
@@ -996,11 +998,67 @@ namespace EmpowerPresenter
         }
         private string getTranslationSecondary()
         {
-            if (noneToolStripMenuItem.Checked == true)
+            if (toolStripMenuItem2ndNone.Checked == true)
                 return "";
-            else if (englishKJVToolStripMenuItem1.Checked == true)
+            else if (toolStripMenuItem2ndKJV.Checked == true)
                 return "KJV";
-            else if (russianToolStripMenuItem1.Checked == true)
+            else if (toolStripMenuItem2ndRussian.Checked == true)
+                return "RST";
+            else
+                return "UK";
+        }
+
+        // Tertiary translation
+        // PENDING: Refactor to reduce duplication
+        private void toolStripMenuItem3rdNone_Click(object sender, EventArgs e)
+        {
+            selectTranslationTertiary(0);
+        }
+        private void toolStripMenuItem3rdKJV_Click(object sender, EventArgs e)
+        {
+            selectTranslationTertiary(1);
+        }
+        private void toolStripMenuItem3rdRussian_Click(object sender, EventArgs e)
+        {
+            selectTranslationTertiary(2);
+        }
+        private void toolStripMenuItem3rdUkrainian_Click(object sender, EventArgs e)
+        {
+            selectTranslationTertiary(3);
+        }
+        private void selectTranslationTertiary(int i)
+        {
+            numberOfVersesToDisplayToolStripMenuItem.Visible = i == 0 ? true : false; // Multi verse only for single translation
+            toolStripMenuItem3rdNone.Checked = i == 0 ? true : false;
+            toolStripMenuItem3rdKJV.Checked = i == 1 ? true : false;
+            toolStripMenuItem3rdRussian.Checked = i == 2 ? true : false;
+            toolStripMenuItem3rdUkrainian.Checked = i == 3 ? true : false;
+            if (Program.ConfigHelper.BibleTertiaryTranslation != getTranslationTertiary())
+            {
+                Program.ConfigHelper.BibleTertiaryTranslation = getTranslationTertiary();
+            }
+        }
+        private void selectTranslationTertiary(string version)
+        {
+            int i;
+            switch (version)
+            {
+                case "KJV": i = 1; break;
+                case "RST": i = 2; break;
+                case "UK": i = 3; break;
+                default: i = 0; break;
+            }
+
+            selectTranslationTertiary(i);
+        }
+        private string getTranslationTertiary()
+        {
+            // PENDING: Refactor to avoid duplication
+            if (toolStripMenuItem3rdNone.Checked == true)
+                return "";
+            else if (toolStripMenuItem3rdKJV.Checked == true)
+                return "KJV";
+            else if (toolStripMenuItem3rdRussian.Checked == true)
                 return "RST";
             else
                 return "UK";
@@ -1011,7 +1069,7 @@ namespace EmpowerPresenter
         {
             selectDisplayVerse(1); // number indicates setting index
         }
-        private void versesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void toolStripMenuItem2Verses_Click(object sender, EventArgs e)
         {
             selectDisplayVerse(2); // number indicates setting index
         }
@@ -1022,7 +1080,7 @@ namespace EmpowerPresenter
         private void selectDisplayVerse(int i)
         {
             verseToolStripMenuItem.Checked = i == 1 ? true : false;
-            versesToolStripMenuItem.Checked = i == 2 ? true : false;
+            toolStripMenuItem2Verses.Checked = i == 2 ? true : false;
             fitByFontSizeToolStripMenuItem.Checked = i == 3 ? true : false;
             if (Program.ConfigHelper.BibleNumVerses != i)
             {
@@ -1133,10 +1191,10 @@ namespace EmpowerPresenter
         // Shortcuts
         private void keyControllerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Program.ConfigHelper.BibleNumVerses == 3)
+            if (Program.ConfigHelper.BibleNumVerses == 4) // Toggles fit by verse
                 Program.ConfigHelper.BibleNumVerses = 1;
             else
-                Program.ConfigHelper.BibleNumVerses = 3;
+                Program.ConfigHelper.BibleNumVerses = 4;
         }
         private void bibleToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -1305,5 +1363,6 @@ namespace EmpowerPresenter
         }
 
         #endregion
+
     }
 }

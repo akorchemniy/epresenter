@@ -39,6 +39,8 @@ namespace EmpowerPresenter
         private Label label5;
         private Vendisoft.Controls.ImageButton btnOptions;
         private EmpowerPresenter.Controls.PopupSlider sliderOpacity;
+        private Label label3;
+        private ComboBox _tertiaryTranslation;
         private System.Windows.Forms.Button btnSave;
         #endregion
 
@@ -54,6 +56,7 @@ namespace EmpowerPresenter
             catch{displaySelection1.CurrentScreenIndex = 0;}
             setPrimaryTranslation(Program.ConfigHelper.BiblePrimaryTranslation);
             setSecondaryTranslation(Program.ConfigHelper.BibleSecondaryTranslation);
+            setTertiaryTranslation(Program.ConfigHelper.BibleTertiaryTranslation);
             cbBackdrop.Checked = Program.ConfigHelper.UseBlackBackdrop;
             cbHideContent.Checked = Program.ConfigHelper.HideContentOnMin;
             sliderOpacity.Value = (int)(((double)Program.ConfigHelper.SongDefaultOpacity + 255) * 100 / 512);
@@ -67,13 +70,13 @@ namespace EmpowerPresenter
             switch(value)
             {
                 case "RST":
-                    _primaryTranslation.SelectedIndex =1;
+                    _primaryTranslation.SelectedIndex = 1;
                     break;
                 case "UK":
-                    _primaryTranslation.SelectedIndex =2;
+                    _primaryTranslation.SelectedIndex = 2;
                     break;
                 default:
-                    _primaryTranslation.SelectedIndex =0;
+                    _primaryTranslation.SelectedIndex = 0;
                     break;
             }
         }
@@ -85,13 +88,32 @@ namespace EmpowerPresenter
                     _secondaryTranslation.SelectedIndex = 1;
                     break;
                 case "RST":
-                    _secondaryTranslation.SelectedIndex =2;
+                    _secondaryTranslation.SelectedIndex = 2;
                     break;
                 case "UK":
-                    _secondaryTranslation.SelectedIndex =3;
+                    _secondaryTranslation.SelectedIndex = 3;
                     break;
                 default:
-                    _secondaryTranslation.SelectedIndex =0;
+                    _secondaryTranslation.SelectedIndex = 0;
+                    break;
+            }
+        }
+        private void setTertiaryTranslation(string value)
+        {
+            // PENDING: Clean up duplication
+            switch(value)
+            {
+                case "KJV":
+                    _tertiaryTranslation.SelectedIndex = 1;
+                    break;
+                case "RST":
+                    _tertiaryTranslation.SelectedIndex = 2;
+                    break;
+                case "UK":
+                    _tertiaryTranslation.SelectedIndex = 3;
+                    break;
+                default:
+                    _tertiaryTranslation.SelectedIndex = 0;
                     break;
             }
         }
@@ -125,12 +147,28 @@ namespace EmpowerPresenter
                     return "";
             }
         }
+        private string getTertiaryTranslation()
+        {
+            // PENDING: Clean up duplication
+            switch(_tertiaryTranslation.SelectedIndex)
+            {
+                case 0:
+                    return "";
+                case 1:
+                    return "KJV";
+                case 2:
+                    return "RST";
+                case 3:
+                    return "UK";
+                default:
+                    return "";
+            }
+        }
 
         #region Windows Form Designer generated code
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
-            this.displaySelection1 = new EmpowerPresenter.DisplaySelection();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this._secondaryTranslation = new System.Windows.Forms.ComboBox();
             this._primaryTranslation = new System.Windows.Forms.ComboBox();
@@ -147,16 +185,19 @@ namespace EmpowerPresenter
             this.label4 = new System.Windows.Forms.Label();
             this.tpOther = new System.Windows.Forms.TabPage();
             this.gbSongs = new System.Windows.Forms.GroupBox();
-            this.sliderOpacity = new EmpowerPresenter.Controls.PopupSlider();
-            this.btnOptions = new Vendisoft.Controls.ImageButton();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnFont = new Vendisoft.Controls.ImageButton();
-            this.btnImage = new Vendisoft.Controls.ImageButton();
             this.cbHideContent = new System.Windows.Forms.CheckBox();
             this.cbBackdrop = new System.Windows.Forms.CheckBox();
+            this._tertiaryTranslation = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.displaySelection1 = new EmpowerPresenter.DisplaySelection();
+            this.sliderOpacity = new EmpowerPresenter.Controls.PopupSlider();
+            this.btnOptions = new Vendisoft.Controls.ImageButton();
+            this.btnFont = new Vendisoft.Controls.ImageButton();
+            this.btnImage = new Vendisoft.Controls.ImageButton();
             this.groupBox2.SuspendLayout();
             this.pnlBottom.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -166,15 +207,11 @@ namespace EmpowerPresenter
             this.gbSongs.SuspendLayout();
             this.SuspendLayout();
             // 
-            // displaySelection1
-            // 
-            this.displaySelection1.CurrentScreenIndex = 0;
-            resources.ApplyResources(this.displaySelection1, "displaySelection1");
-            this.displaySelection1.Name = "displaySelection1";
-            // 
             // groupBox2
             // 
             resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this._tertiaryTranslation);
             this.groupBox2.Controls.Add(this._secondaryTranslation);
             this.groupBox2.Controls.Add(this._primaryTranslation);
             this.groupBox2.Controls.Add(this.label2);
@@ -245,9 +282,9 @@ namespace EmpowerPresenter
             // 
             // tabControl1
             // 
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.tpDisplay);
             this.tabControl1.Controls.Add(this.tpOther);
-            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
@@ -305,32 +342,6 @@ namespace EmpowerPresenter
             this.gbSongs.Name = "gbSongs";
             this.gbSongs.TabStop = false;
             // 
-            // sliderOpacity
-            // 
-            resources.ApplyResources(this.sliderOpacity, "sliderOpacity");
-            this.sliderOpacity.BackColor = System.Drawing.Color.Transparent;
-            this.sliderOpacity.ImedUpdate = true;
-            this.sliderOpacity.MaximumSize = new System.Drawing.Size(27, 95);
-            this.sliderOpacity.MinimumSize = new System.Drawing.Size(27, 95);
-            this.sliderOpacity.Name = "sliderOpacity";
-            this.sliderOpacity.Value = 0;
-            // 
-            // btnOptions
-            // 
-            this.btnOptions.BackColor = System.Drawing.Color.Transparent;
-            this.btnOptions.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOptions.DisabledImg = global::EmpowerPresenter.Properties.Resources.cog;
-            this.btnOptions.IsHighlighted = false;
-            this.btnOptions.IsPressed = false;
-            this.btnOptions.IsSelected = false;
-            resources.ApplyResources(this.btnOptions, "btnOptions");
-            this.btnOptions.Name = "btnOptions";
-            this.btnOptions.NormalImg = global::EmpowerPresenter.Properties.Resources.cog;
-            this.btnOptions.OverImg = global::EmpowerPresenter.Properties.Resources.cog;
-            this.btnOptions.PressedImg = global::EmpowerPresenter.Properties.Resources.cog;
-            this.btnOptions.Tag = "Settings";
-            this.btnOptions.Click += new System.EventHandler(this.btnOptions_Click);
-            // 
             // label8
             // 
             resources.ApplyResources(this.label8, "label8");
@@ -357,6 +368,63 @@ namespace EmpowerPresenter
             this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label5.Name = "label5";
             this.label5.Click += new System.EventHandler(this.btnImage_Click);
+            // 
+            // cbHideContent
+            // 
+            resources.ApplyResources(this.cbHideContent, "cbHideContent");
+            this.cbHideContent.Name = "cbHideContent";
+            this.cbHideContent.UseVisualStyleBackColor = true;
+            // 
+            // cbBackdrop
+            // 
+            resources.ApplyResources(this.cbBackdrop, "cbBackdrop");
+            this.cbBackdrop.Name = "cbBackdrop";
+            this.cbBackdrop.UseVisualStyleBackColor = true;
+            // 
+            // _tertiaryTranslation
+            // 
+            resources.ApplyResources(this._tertiaryTranslation, "_tertiaryTranslation");
+            this._tertiaryTranslation.Items.AddRange(new object[] {
+            resources.GetString("_tertiaryTranslation.Items"),
+            resources.GetString("_tertiaryTranslation.Items1"),
+            resources.GetString("_tertiaryTranslation.Items2"),
+            resources.GetString("_tertiaryTranslation.Items3")});
+            this._tertiaryTranslation.Name = "_tertiaryTranslation";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // displaySelection1
+            // 
+            this.displaySelection1.CurrentScreenIndex = 0;
+            resources.ApplyResources(this.displaySelection1, "displaySelection1");
+            this.displaySelection1.Name = "displaySelection1";
+            // 
+            // sliderOpacity
+            // 
+            resources.ApplyResources(this.sliderOpacity, "sliderOpacity");
+            this.sliderOpacity.BackColor = System.Drawing.Color.Transparent;
+            this.sliderOpacity.ImedUpdate = true;
+            this.sliderOpacity.Name = "sliderOpacity";
+            this.sliderOpacity.Value = 0;
+            // 
+            // btnOptions
+            // 
+            this.btnOptions.BackColor = System.Drawing.Color.Transparent;
+            this.btnOptions.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOptions.DisabledImg = global::EmpowerPresenter.Properties.Resources.cog;
+            this.btnOptions.IsHighlighted = false;
+            this.btnOptions.IsPressed = false;
+            this.btnOptions.IsSelected = false;
+            resources.ApplyResources(this.btnOptions, "btnOptions");
+            this.btnOptions.Name = "btnOptions";
+            this.btnOptions.NormalImg = global::EmpowerPresenter.Properties.Resources.cog;
+            this.btnOptions.OverImg = global::EmpowerPresenter.Properties.Resources.cog;
+            this.btnOptions.PressedImg = global::EmpowerPresenter.Properties.Resources.cog;
+            this.btnOptions.Tag = "Settings";
+            this.btnOptions.Click += new System.EventHandler(this.btnOptions_Click);
             // 
             // btnFont
             // 
@@ -390,18 +458,6 @@ namespace EmpowerPresenter
             this.btnImage.Tag = "Change background";
             this.btnImage.Click += new System.EventHandler(this.btnImage_Click);
             // 
-            // cbHideContent
-            // 
-            resources.ApplyResources(this.cbHideContent, "cbHideContent");
-            this.cbHideContent.Name = "cbHideContent";
-            this.cbHideContent.UseVisualStyleBackColor = true;
-            // 
-            // cbBackdrop
-            // 
-            resources.ApplyResources(this.cbBackdrop, "cbBackdrop");
-            this.cbBackdrop.Name = "cbBackdrop";
-            this.cbBackdrop.UseVisualStyleBackColor = true;
-            // 
             // Settings
             // 
             this.AcceptButton = this.btnSave;
@@ -434,6 +490,7 @@ namespace EmpowerPresenter
             Program.ConfigHelper.PresentationMonitor = displaySelection1.CurrentScreenIndex;
             Program.ConfigHelper.BiblePrimaryTranslation = getPrimaryTranslation();
             Program.ConfigHelper.BibleSecondaryTranslation = getSecondaryTranslation();
+            Program.ConfigHelper.BibleTertiaryTranslation = getTertiaryTranslation();
             Program.ConfigHelper.UseBlackBackdrop = cbBackdrop.Checked;
             Program.ConfigHelper.HideContentOnMin = cbHideContent.Checked;
 
