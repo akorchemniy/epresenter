@@ -11,27 +11,27 @@ using System.IO;
 
 namespace EmpowerPresenter
 {
-	public partial class DualDispInfo : Form
-	{
-		//////////////////////////////////////////////////
-		public DualDispInfo()
-		{
-			InitializeComponent();
-			Program.Presenter.RegisterExKeyOwnerForm(this);
-		}
-		private void btnActivate_Click(object sender, EventArgs e)
-		{
-			this.Close();
-		}
-		private void llDispInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-		{
-			try
-			{
-				string loc = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "help\\setting_display.html");
-				System.Diagnostics.Process.Start(loc);
-				this.Close();
-			}
-			catch { }
-		}
-	}
+    public partial class DualDispInfo : Form
+    {
+        //////////////////////////////////////////////////
+        public DualDispInfo()
+        {
+            InitializeComponent();
+            Program.Presenter.RegisterExKeyOwnerForm(this);
+        }
+        private void btnActivate_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void llDispInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            try
+            {
+                string loc = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "help\\setting_display.html");
+                System.Diagnostics.Process.Start(loc);
+                this.Close();
+            }
+            catch { }
+        }
+    }
 }

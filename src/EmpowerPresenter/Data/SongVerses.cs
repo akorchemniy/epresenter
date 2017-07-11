@@ -5,12 +5,12 @@ using System.Data;
 
 namespace EmpowerPresenter.Data
 {
-	public class SongVerses
-	{
-		private SongVerses()
-		{
-			// This class contains only static methods and does not need a public constructor
-		}
+    public class SongVerses
+    {
+        private SongVerses()
+        {
+            // This class contains only static methods and does not need a public constructor
+        }
         //public static void AddoSngVerses(PresenterDataset.SongVersesRow songVerse)
         //{
         //    using (FBirdTask t = new FBirdTask())
@@ -50,5 +50,5 @@ namespace EmpowerPresenter.Data
         //            return "";
         //    }
         //}
-	}
+    }
 }

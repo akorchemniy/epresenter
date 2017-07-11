@@ -6,12 +6,12 @@ using System.Text;
 
 namespace EmpowerPresenter
 {
-	public class SongPackage
-	{
-		////////////////////////////////////////////////////////////////
-		public SongPackage()
-		{
-			// TODO
-		}
-	}
+    public class SongPackage
+    {
+        ////////////////////////////////////////////////////////////////
+        public SongPackage()
+        {
+            // TODO
+        }
+    }
 }

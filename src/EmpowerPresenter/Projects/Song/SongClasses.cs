@@ -6,16 +6,16 @@ using System.Text;
 
 namespace EmpowerPresenter
 {
-	public class SongVerse
-	{
-		public bool IsChorus;
-		public string Text;
-		public int VerseNumber;
-		public SongVerse(bool isChorus, string text, int verseNumber)
-		{
-			IsChorus = isChorus;
-			Text = text;
-			VerseNumber = verseNumber;
-		}
-	}
+    public class SongVerse
+    {
+        public bool IsChorus;
+        public string Text;
+        public int VerseNumber;
+        public SongVerse(bool isChorus, string text, int verseNumber)
+        {
+            IsChorus = isChorus;
+            Text = text;
+            VerseNumber = verseNumber;
+        }
+    }
 }

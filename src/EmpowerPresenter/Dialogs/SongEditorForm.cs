@@ -15,62 +15,62 @@ using FirebirdSql.Data.FirebirdClient;
 
 namespace EmpowerPresenter
 {
-	public class SongEditorForm : System.Windows.Forms.Form
-	{
-		private PhotoInfo currentImage;
-		private PresenterDataset.SongsRow currentRow;
-		private System.Data.DataView dataView1;
-		private PresenterDataset.SongVersesDataTable dt;
-		private int sliderSuspendUpdate = 0;
-	
-		#region Designer
+    public class SongEditorForm : System.Windows.Forms.Form
+    {
+        private PhotoInfo currentImage;
+        private PresenterDataset.SongsRow currentRow;
+        private System.Data.DataView dataView1;
+        private PresenterDataset.SongVersesDataTable dt;
+        private int sliderSuspendUpdate = 0;
+    
+        #region Designer
 
-		private System.Windows.Forms.DataGridWithEnter dataGrid1;
-		private System.Windows.Forms.DataGridTableStyle dataGridTableStyle1;
-		private System.Windows.Forms.DataGridMultiLineTextBox dataGridTextBoxColumn1;
-		private System.Windows.Forms.DataGridBoolColumn dataGridBoolColumn1;
-		private System.Windows.Forms.TextBox txtCopyright;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.ErrorProvider errorProvider1;
-		private System.Windows.Forms.TextBox txtNumber;
-		private System.Windows.Forms.TextBox txtTitle;
-		private System.Windows.Forms.TextBox txtChorus;
-		private System.Windows.Forms.Button btnCancel;
-		private System.Windows.Forms.Button btnSave;
-		private System.Windows.Forms.OpenFileDialog ofdLocation;
-		private System.Windows.Forms.PictureBox pbPhoto;
-		private Vendisoft.Controls.ImageButton btnFont;
+        private System.Windows.Forms.DataGridWithEnter dataGrid1;
+        private System.Windows.Forms.DataGridTableStyle dataGridTableStyle1;
+        private System.Windows.Forms.DataGridMultiLineTextBox dataGridTextBoxColumn1;
+        private System.Windows.Forms.DataGridBoolColumn dataGridBoolColumn1;
+        private System.Windows.Forms.TextBox txtCopyright;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.TextBox txtNumber;
+        private System.Windows.Forms.TextBox txtTitle;
+        private System.Windows.Forms.TextBox txtChorus;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.OpenFileDialog ofdLocation;
+        private System.Windows.Forms.PictureBox pbPhoto;
+        private Vendisoft.Controls.ImageButton btnFont;
         private Vendisoft.Controls.ImageButton btnImage;
-		private PictureBox pbCopyright;
-		private Label lblCopyrightTitle;
-		private EmpowerPresenter.Controls.PopupSlider sliderOpacity;
-		private IContainer components;
-		#endregion
+        private PictureBox pbCopyright;
+        private Label lblCopyrightTitle;
+        private EmpowerPresenter.Controls.PopupSlider sliderOpacity;
+        private IContainer components;
+        #endregion
 
-		//////////////////////////////////////////////////////////////////////
-		public SongEditorForm(PresenterDataset.SongsRow row)
-		{
+        //////////////////////////////////////////////////////////////////////
+        public SongEditorForm(PresenterDataset.SongsRow row)
+        {
             if (row == null)
                 throw new ArgumentNullException("row");
 
-			InitializeComponent();
+            InitializeComponent();
 
-			LoadSong(row);
+            LoadSong(row);
 
-			dataGridTextBoxColumn1.TextBox.AcceptsReturn = true;
-			dataGridTextBoxColumn1.TextBox.Multiline = true;
-			dataGridTextBoxColumn1.TextBox.ScrollBars = ScrollBars.Vertical;
-			dataGrid1.KeyEnter += new ProcessKeyPreviewMsgEventHandler(dataGrid1_KeyEnter);
-			dt.SongVersesRowChanged += new EmpowerPresenter.PresenterDataset.SongVersesRowChangeEventHandler(dt_SongVersesRowChanged);
-			dt.SongVersesRowDeleted += new EmpowerPresenter.PresenterDataset.SongVersesRowChangeEventHandler(dt_SongVersesRowDeleted);
+            dataGridTextBoxColumn1.TextBox.AcceptsReturn = true;
+            dataGridTextBoxColumn1.TextBox.Multiline = true;
+            dataGridTextBoxColumn1.TextBox.ScrollBars = ScrollBars.Vertical;
+            dataGrid1.KeyEnter += new ProcessKeyPreviewMsgEventHandler(dataGrid1_KeyEnter);
+            dt.SongVersesRowChanged += new EmpowerPresenter.PresenterDataset.SongVersesRowChangeEventHandler(dt_SongVersesRowChanged);
+            dt.SongVersesRowDeleted += new EmpowerPresenter.PresenterDataset.SongVersesRowChangeEventHandler(dt_SongVersesRowDeleted);
 
-			Program.Presenter.RegisterExKeyOwnerForm(this);
-		}
-		#region Windows Form Designer generated code
-		private void InitializeComponent()
-		{
+            Program.Presenter.RegisterExKeyOwnerForm(this);
+        }
+        #region Windows Form Designer generated code
+        private void InitializeComponent()
+        {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SongEditorForm));
             this.txtNumber = new System.Windows.Forms.TextBox();
@@ -292,72 +292,72 @@ namespace EmpowerPresenter
             this.ResumeLayout(false);
             this.PerformLayout();
 
-		}
-		#endregion
+        }
+        #endregion
 
-		private void SongEditorForm_Load(object sender, System.EventArgs e)
-		{
-			dataGrid1.DataSource = dataView1;
-		}
+        private void SongEditorForm_Load(object sender, System.EventArgs e)
+        {
+            dataGrid1.DataSource = dataView1;
+        }
 
-		// Song Information
-		public void LoadSong(PresenterDataset.SongsRow row)
-		{
+        // Song Information
+        public void LoadSong(PresenterDataset.SongsRow row)
+        {
             if (row == null)
             {
                 this.Close();
                 return;
             }
 
-			currentRow = row;
+            currentRow = row;
 
-			// Accept changes if not new
-			if (row.RowState == DataRowState.Detached)
-			{
-				this.Text = Loc.Get("Add a new song");
-				this.btnSave.Text = Loc.Get("Add");
+            // Accept changes if not new
+            if (row.RowState == DataRowState.Detached)
+            {
+                this.Text = Loc.Get("Add a new song");
+                this.btnSave.Text = Loc.Get("Add");
 
                 // setup datatable
                 InternalLoadSongFromDB(row, true);
-			}
-			else
-			{
-				this.btnSave.Text = Loc.Get("Save");
-				row.AcceptChanges();
+            }
+            else
+            {
+                this.btnSave.Text = Loc.Get("Save");
+                row.AcceptChanges();
                 
                 // Load song verses from database
-			    InternalLoadSongFromDB(row, false);
-			}
+                InternalLoadSongFromDB(row, false);
+            }
 
-			
+            
 
-			// Set textboxes
-			if (currentRow.Number != -1)
-				txtNumber.Text = currentRow.Number.ToString();
-			else
-				txtNumber.Text = "";
-			txtTitle.Text = currentRow.Title;
-			txtChorus.Text = currentRow.Chorus;
+            // Set textboxes
+            if (currentRow.Number != -1)
+                txtNumber.Text = currentRow.Number.ToString();
+            else
+                txtNumber.Text = "";
+            txtTitle.Text = currentRow.Title;
+            txtChorus.Text = currentRow.Chorus;
 
-			// Image and properties
-			currentImage = new PhotoInfo();
-			if (currentRow.Image == -2)
-				currentImage.ImageId = Program.ConfigHelper.SongDefaultImage;
-			else
-				currentImage.ImageId = currentRow.Image;
-			sliderSuspendUpdate++;
-			if (currentRow.Overlay == 777)
-				sliderOpacity.Value = 50;
-			else
-				sliderOpacity.Value = (int)(((double)currentRow.Overlay + 255) * 100 / 512);
-			sliderSuspendUpdate--;
+            // Image and properties
+            currentImage = new PhotoInfo();
+            if (currentRow.Image == -2)
+                currentImage.ImageId = Program.ConfigHelper.SongDefaultImage;
+            else
+                currentImage.ImageId = currentRow.Image;
+            sliderSuspendUpdate++;
+            if (currentRow.Overlay == 777)
+                sliderOpacity.Value = 50;
+            else
+                sliderOpacity.Value = (int)(((double)currentRow.Overlay + 255) * 100 / 512);
+            sliderSuspendUpdate--;
 
-			txtCopyright.Text = Data.Songs.GetSongCopyright(currentRow.AutoNumber);
-		}
-		private void InternalLoadSongFromDB(PresenterDataset.SongsRow row, bool isNew)
-		{
-			dt = new PresenterDataset.SongVersesDataTable();
-			dt.Columns["AutoNumber"].DefaultValue = row.AutoNumber;
+            txtCopyright.Text = Data.Songs.GetSongCopyright(currentRow.AutoNumber);
+        }
+        private void InternalLoadSongFromDB(PresenterDataset.SongsRow row, bool isNew)
+        {
+            dt = new PresenterDataset.SongVersesDataTable();
+            dt.Columns["AutoNumber"].DefaultValue = row.AutoNumber;
             if (!isNew)
             {
                 using (FBirdTask t = new FBirdTask())
@@ -386,373 +386,373 @@ namespace EmpowerPresenter
 
             dt.AcceptChanges();
 
-			if (dt.Count == 0)
-				btnSave.Enabled = false;
+            if (dt.Count == 0)
+                btnSave.Enabled = false;
 
-			dataView1.BeginInit();
-			dataView1.Table = dt;
-			dataView1.EndInit();
-			dataGrid1.TableStyles[0].MappingName = dt.TableName;
-		}
-		private void txtNumber_Validating(object sender, System.ComponentModel.CancelEventArgs e)
-		{
-			int num = 0;
-			if (int.TryParse(txtNumber.Text, out num))
-			{
-				if (num < 0)
-					errorProvider1.SetError(txtNumber, Loc.Get("Number cannot be negative"));
-				else
-					errorProvider1.SetError(txtNumber, "");
-			}
-			else
-				errorProvider1.SetError(txtNumber, Loc.Get("Not a valid number"));
-		}
-		private void txtTitle_Validating(object sender, System.ComponentModel.CancelEventArgs e)
-		{
-			if(txtTitle.Text.IndexOfAny(new char[] {'*', '"', '%'}) != -1)
-			{
-				errorProvider1.SetError(txtTitle, Loc.Get("Contains at least one of the invalid characters:") + " * \" %");
-			}
-			else
-				errorProvider1.SetError(txtTitle, "");
-		}
-		private void txtChorus_Validating(object sender, System.ComponentModel.CancelEventArgs e)
-		{
-			if(txtChorus.Text.IndexOfAny(new char[] {'*', '"', '%'}) != -1)
-			{
-				errorProvider1.SetError(txtChorus, Loc.Get("Contains at least one of the invalid characters:") + " * \" %");
-			}
-			else
-				errorProvider1.SetError(txtChorus, "");
-		}
-		private void dataGrid1_KeyEnter(object sender, ref Message e)
-		{
-			if (dataGrid1.CurrentCell.RowNumber > -1 && dataGrid1.CurrentCell.ColumnNumber == 1)
-			{
-				if (dataGridTextBoxColumn1.TextBox.ContainsFocus)
-				{
-					SendKeys.Send(" \b"); // A simple return will not mark the cell as modified
-					dataGridTextBoxColumn1.TextBox.Modified = true;
-					dataGridTextBoxColumn1.TextBox.SelectedText = "\r\n";
-					dataGrid1.ColumnStartedEditingExt(dataGridTextBoxColumn1.TextBox.Bounds);
-				}
-			}
-		}
-		private void dt_SongVersesRowChanged(object sender, PresenterDataset.SongVersesRowChangeEvent e)
-		{
-			if (dt.Count > 0 || e.Action == DataRowAction.Add)
-				btnSave.Enabled = true;
-		}
-		private void dt_SongVersesRowDeleted(object sender, PresenterDataset.SongVersesRowChangeEvent e)
-		{
-			if (dt.Count == 0)
-				btnSave.Enabled = false;
-		}
+            dataView1.BeginInit();
+            dataView1.Table = dt;
+            dataView1.EndInit();
+            dataGrid1.TableStyles[0].MappingName = dt.TableName;
+        }
+        private void txtNumber_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            int num = 0;
+            if (int.TryParse(txtNumber.Text, out num))
+            {
+                if (num < 0)
+                    errorProvider1.SetError(txtNumber, Loc.Get("Number cannot be negative"));
+                else
+                    errorProvider1.SetError(txtNumber, "");
+            }
+            else
+                errorProvider1.SetError(txtNumber, Loc.Get("Not a valid number"));
+        }
+        private void txtTitle_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if(txtTitle.Text.IndexOfAny(new char[] {'*', '"', '%'}) != -1)
+            {
+                errorProvider1.SetError(txtTitle, Loc.Get("Contains at least one of the invalid characters:") + " * \" %");
+            }
+            else
+                errorProvider1.SetError(txtTitle, "");
+        }
+        private void txtChorus_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if(txtChorus.Text.IndexOfAny(new char[] {'*', '"', '%'}) != -1)
+            {
+                errorProvider1.SetError(txtChorus, Loc.Get("Contains at least one of the invalid characters:") + " * \" %");
+            }
+            else
+                errorProvider1.SetError(txtChorus, "");
+        }
+        private void dataGrid1_KeyEnter(object sender, ref Message e)
+        {
+            if (dataGrid1.CurrentCell.RowNumber > -1 && dataGrid1.CurrentCell.ColumnNumber == 1)
+            {
+                if (dataGridTextBoxColumn1.TextBox.ContainsFocus)
+                {
+                    SendKeys.Send(" \b"); // A simple return will not mark the cell as modified
+                    dataGridTextBoxColumn1.TextBox.Modified = true;
+                    dataGridTextBoxColumn1.TextBox.SelectedText = "\r\n";
+                    dataGrid1.ColumnStartedEditingExt(dataGridTextBoxColumn1.TextBox.Bounds);
+                }
+            }
+        }
+        private void dt_SongVersesRowChanged(object sender, PresenterDataset.SongVersesRowChangeEvent e)
+        {
+            if (dt.Count > 0 || e.Action == DataRowAction.Add)
+                btnSave.Enabled = true;
+        }
+        private void dt_SongVersesRowDeleted(object sender, PresenterDataset.SongVersesRowChangeEvent e)
+        {
+            if (dt.Count == 0)
+                btnSave.Enabled = false;
+        }
 
-		// Display Settings
-		private void llAttachPPT_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-		{
-			if (currentRow == null)
-				return;
+        // Display Settings
+        private void llAttachPPT_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (currentRow == null)
+                return;
 
-			OpenFileDialog f = new OpenFileDialog();
-			Program.Presenter.BeginExKeyOwner();
-			f.Title = Loc.Get("Select PowerPoint presentation");
-			f.Filter = Loc.Get("PowerPoint presentation") + " (*.ppt;*.pps;*.pot)| *.ppt;*.pps;*.pot";
-			if (f.ShowDialog() == DialogResult.Yes && File.Exists(f.FileName))
-			{
-				currentRow.DisplayDefault = false;
-				currentRow.Location = f.FileName;
-			}
-			Program.Presenter.EndExKeyOwner();
-		}
-		private void llDetach_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-		{
-			currentRow.DisplayDefault = true;
-			currentRow.Location = "";
-		}
+            OpenFileDialog f = new OpenFileDialog();
+            Program.Presenter.BeginExKeyOwner();
+            f.Title = Loc.Get("Select PowerPoint presentation");
+            f.Filter = Loc.Get("PowerPoint presentation") + " (*.ppt;*.pps;*.pot)| *.ppt;*.pps;*.pot";
+            if (f.ShowDialog() == DialogResult.Yes && File.Exists(f.FileName))
+            {
+                currentRow.DisplayDefault = false;
+                currentRow.Location = f.FileName;
+            }
+            Program.Presenter.EndExKeyOwner();
+        }
+        private void llDetach_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            currentRow.DisplayDefault = true;
+            currentRow.Location = "";
+        }
 
-		// Background Settings and font
-		private void pbPhoto_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
-		{
-			if (currentImage != null)
-				e.Graphics.DrawImage(currentImage.Preview, 0,0,pbPhoto.Width,pbPhoto.Height);
+        // Background Settings and font
+        private void pbPhoto_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        {
+            if (currentImage != null)
+                e.Graphics.DrawImage(currentImage.Preview, 0,0,pbPhoto.Width,pbPhoto.Height);
 
-			int v = currentRow.Overlay;
-			if (v == 777)
-				v = Program.ConfigHelper.SongDefaultOpacity;
-			if (v > 0)
-				e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(v, Color.White)), 0, 0, pbPhoto.Width, pbPhoto.Height);
-			else
-				e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(-v, Color.Black)), 0, 0, pbPhoto.Width, pbPhoto.Height);
-		}
-		private void pbPhoto_Click(object sender, System.EventArgs e)
-		{
-			ChangeBackgroundImage();
-		}
-		private void ChangeBackgroundImage()
-		{
+            int v = currentRow.Overlay;
+            if (v == 777)
+                v = Program.ConfigHelper.SongDefaultOpacity;
+            if (v > 0)
+                e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(v, Color.White)), 0, 0, pbPhoto.Width, pbPhoto.Height);
+            else
+                e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(-v, Color.Black)), 0, 0, pbPhoto.Width, pbPhoto.Height);
+        }
+        private void pbPhoto_Click(object sender, System.EventArgs e)
+        {
+            ChangeBackgroundImage();
+        }
+        private void ChangeBackgroundImage()
+        {
 #if DEMO
-			new DemoVersionOnly("Changing background").ShowDialog();
+            new DemoVersionOnly("Changing background").ShowDialog();
 #else
-			ImageSelection images = new ImageSelection();
-			if (DialogResult.OK == images.ShowDialog())
-			{
-				currentImage = images.SelectedItem;
-				this.pbPhoto.Invalidate();
-			}
+            ImageSelection images = new ImageSelection();
+            if (DialogResult.OK == images.ShowDialog())
+            {
+                currentImage = images.SelectedItem;
+                this.pbPhoto.Invalidate();
+            }
 #endif
-		}
-		private void sliderOpacity_ValueChanged(object sender, EventArgs e)
-		{
-			if (sliderSuspendUpdate == 0)
-			{
-				int v = sliderOpacity.Value;
-				if (v > 98) // math fix
-					v = 98;
-				if (v < 3)
-					v = 3;
-				int opacityval = (int)((double)v * 512 / 100) - 255;
-				currentRow.Overlay = opacityval;
-				this.pbPhoto.Invalidate();
-			}
-		}
-		private void btnFont_Click(object sender, EventArgs e)
-		{
+        }
+        private void sliderOpacity_ValueChanged(object sender, EventArgs e)
+        {
+            if (sliderSuspendUpdate == 0)
+            {
+                int v = sliderOpacity.Value;
+                if (v > 98) // math fix
+                    v = 98;
+                if (v < 3)
+                    v = 3;
+                int opacityval = (int)((double)v * 512 / 100) - 255;
+                currentRow.Overlay = opacityval;
+                this.pbPhoto.Invalidate();
+            }
+        }
+        private void btnFont_Click(object sender, EventArgs e)
+        {
 #if DEMO
-			new DemoVersionOnly("Changing font").ShowDialog();
+            new DemoVersionOnly("Changing font").ShowDialog();
 #else
-			FontSelection fsForm = new FontSelection();
-			currentRow.FontId = currentRow.AutoNumber;
-			fsForm.LoadFont(PresenterFont.GetFontFromDatabase(currentRow.FontId));
-			if (fsForm.ShowDialog() == DialogResult.OK)
-				PresenterFont.SaveFontToDatabase(currentRow.FontId, fsForm.PresenterFont);
+            FontSelection fsForm = new FontSelection();
+            currentRow.FontId = currentRow.AutoNumber;
+            fsForm.LoadFont(PresenterFont.GetFontFromDatabase(currentRow.FontId));
+            if (fsForm.ShowDialog() == DialogResult.OK)
+                PresenterFont.SaveFontToDatabase(currentRow.FontId, fsForm.PresenterFont);
 #endif
-		}
+        }
 
-		// Buttons
-		private void save()
-		{
+        // Buttons
+        private void save()
+        {
 #if DEMO
-			new DemoVersionOnly("Modifying song data").ShowDialog();
+            new DemoVersionOnly("Modifying song data").ShowDialog();
 #else
-			// update row
-			currentRow.Number = Convert.ToInt32(txtNumber.Text);
-			currentRow.Title = txtTitle.Text;
-			currentRow.Chorus = txtChorus.Text;
-			currentRow.Image = currentImage.ImageId;
+            // update row
+            currentRow.Number = Convert.ToInt32(txtNumber.Text);
+            currentRow.Title = txtTitle.Text;
+            currentRow.Chorus = txtChorus.Text;
+            currentRow.Image = currentImage.ImageId;
 
-			// save changes
-			if (currentRow.RowState == DataRowState.Detached)
-				Program.SongsDS.Songs.AddSongsRow(currentRow);
+            // save changes
+            if (currentRow.RowState == DataRowState.Detached)
+                Program.SongsDS.Songs.AddSongsRow(currentRow);
 
-			Data.Songs.AddUpdateSong(currentRow);
-			currentRow.AcceptChanges();
+            Data.Songs.AddUpdateSong(currentRow);
+            currentRow.AcceptChanges();
 
-			#region Save datatable changes
-			Data.Songs.UpdateSongCopyright(currentRow.AutoNumber, txtCopyright.Text);
+            #region Save datatable changes
+            Data.Songs.UpdateSongCopyright(currentRow.AutoNumber, txtCopyright.Text);
             using (FBirdTask t = new FBirdTask())
-			{
-				DataTable changes = dt.GetChanges();
-				if (changes != null)
-				{
-					t.CommandText = "DELETE FROM [SongVerses] WHERE [AutoNumber] = @AutoNumber";
+            {
+                DataTable changes = dt.GetChanges();
+                if (changes != null)
+                {
+                    t.CommandText = "DELETE FROM [SongVerses] WHERE [AutoNumber] = @AutoNumber";
                     t.Parameters.Add("@AutoNumber", FbDbType.Integer);
-					t.Parameters["@AutoNumber"].Value = currentRow.AutoNumber;
-					t.ExecuteNonQuery();
+                    t.Parameters["@AutoNumber"].Value = currentRow.AutoNumber;
+                    t.ExecuteNonQuery();
 
-					t.CommandText = 
-						"INSERT INTO [SongVerses] ([AutoNumber], [IsChorus], [Verse], [OrderNum]) " +
-						"VALUES (@AutoNumber, @IsChorus, @Verse, @OrderNum)";
+                    t.CommandText = 
+                        "INSERT INTO [SongVerses] ([AutoNumber], [IsChorus], [Verse], [OrderNum]) " +
+                        "VALUES (@AutoNumber, @IsChorus, @Verse, @OrderNum)";
                     t.Parameters.Add("@IsChorus", FbDbType.SmallInt);
                     t.Parameters.Add("@Verse", FbDbType.VarChar, 0);
                     t.Parameters.Add("@OrderNum", FbDbType.Integer);
 
-					int i = 0;
-					foreach (DataRow r in dt.Rows)
-					{
-						if (r.RowState == DataRowState.Deleted)
-							continue;
+                    int i = 0;
+                    foreach (DataRow r in dt.Rows)
+                    {
+                        if (r.RowState == DataRowState.Deleted)
+                            continue;
 
-						t.Parameters["@OrderNum"].Value = i.ToString();
-						t.Parameters["@IsChorus"].Value = (bool)r["IsChorus"] == true ? 1 : 0;
-						t.Parameters["@Verse"].Value = r["Verse"];
-						t.ExecuteNonQuery();
-						i++;
-					}
-				}
-			}
-			#endregion
+                        t.Parameters["@OrderNum"].Value = i.ToString();
+                        t.Parameters["@IsChorus"].Value = (bool)r["IsChorus"] == true ? 1 : 0;
+                        t.Parameters["@Verse"].Value = r["Verse"];
+                        t.ExecuteNonQuery();
+                        i++;
+                    }
+                }
+            }
+            #endregion
 #endif
-		}
-		private void btnSave_Click(object sender, System.EventArgs e)
-		{
+        }
+        private void btnSave_Click(object sender, System.EventArgs e)
+        {
             // Verify that we have at least one verse
             int rows = 0;
             foreach (DataRow r in dt.Rows)
-				if (r.RowState != DataRowState.Deleted)
-				    rows++;
+                if (r.RowState != DataRowState.Deleted)
+                    rows++;
             if (rows == 0)
             {
                 MessageBox.Show(Loc.Get("Please add at least one verse for the song"));
                 return;
             }
 
-			this.DialogResult = DialogResult.OK;
-			this.save();
-			this.Close();
-		}
-		private void btnCancel_Click(object sender, System.EventArgs e)
-		{
-			this.DialogResult = DialogResult.Cancel;
-			if (currentRow.RowState != DataRowState.Detached)
-				currentRow.RejectChanges();
-			this.Close();
-		}
+            this.DialogResult = DialogResult.OK;
+            this.save();
+            this.Close();
+        }
+        private void btnCancel_Click(object sender, System.EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            if (currentRow.RowState != DataRowState.Detached)
+                currentRow.RejectChanges();
+            this.Close();
+        }
 
-		#region Internal testing funcions
-		#if InternalOnly
-		private void SongEditorForm_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
-		{
-			PPTFont f;
-			switch (e.KeyCode)
-			{
-				case Keys.F1:
-					breakVerses(3);
-					break;
-				case Keys.F2:
-					breakVerses(4);
-					break;
-				case Keys.F3:
-					button2.PerformClick();
-					break;
-				case Keys.F4:
-					btnSave.PerformClick();
-					break;
-				case Keys.F5:
-					MainStaticClass.MainForm.StartSongSlideShow(currentRow);
-					MainStaticClass.MainForm.BringToFront();
-					break;
-				case Keys.F6:
-					Application.CurrentInputLanguage = InputLanguage.InstalledInputLanguages[0];
-					break;
-				case Keys.F7:
-					Application.CurrentInputLanguage = InputLanguage.InstalledInputLanguages[1];
-					break;
-				case Keys.F8:
-					f = FireBirdPPTFont.GetFontFromDatabase(this.currentRow.AutoNumber);
-					f.SizeInPoints += 2;
-					FireBirdPPTFont.SaveFontToDatabase(this.currentRow.AutoNumber, f);
-					btnSave.PerformClick();
-					break;
-				case Keys.F9:
-					f = FireBirdPPTFont.GetFontFromDatabase(this.currentRow.AutoNumber);
-					f.SizeInPoints -= 2;
-					FireBirdPPTFont.SaveFontToDatabase(this.currentRow.AutoNumber, f);
-					btnSave.PerformClick();
-					break;
-				case Keys.F10:
-					f = FireBirdPPTFont.GetFontFromDatabase(this.currentRow.AutoNumber);
-					f.Bold = !f.Bold;
-					FireBirdPPTFont.SaveFontToDatabase(this.currentRow.AutoNumber, f);
-					btnSave.PerformClick();
-					break;
-				case Keys.F11:
-					MainStaticClass.SlideView.GoToLast();
-					break;
-				case Keys.F12:
-					splitVerses();
-					break;
-				default:
-					break;
-			}
-		}
+        #region Internal testing funcions
+        #if InternalOnly
+        private void SongEditorForm_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
+        {
+            PPTFont f;
+            switch (e.KeyCode)
+            {
+                case Keys.F1:
+                    breakVerses(3);
+                    break;
+                case Keys.F2:
+                    breakVerses(4);
+                    break;
+                case Keys.F3:
+                    button2.PerformClick();
+                    break;
+                case Keys.F4:
+                    btnSave.PerformClick();
+                    break;
+                case Keys.F5:
+                    MainStaticClass.MainForm.StartSongSlideShow(currentRow);
+                    MainStaticClass.MainForm.BringToFront();
+                    break;
+                case Keys.F6:
+                    Application.CurrentInputLanguage = InputLanguage.InstalledInputLanguages[0];
+                    break;
+                case Keys.F7:
+                    Application.CurrentInputLanguage = InputLanguage.InstalledInputLanguages[1];
+                    break;
+                case Keys.F8:
+                    f = FireBirdPPTFont.GetFontFromDatabase(this.currentRow.AutoNumber);
+                    f.SizeInPoints += 2;
+                    FireBirdPPTFont.SaveFontToDatabase(this.currentRow.AutoNumber, f);
+                    btnSave.PerformClick();
+                    break;
+                case Keys.F9:
+                    f = FireBirdPPTFont.GetFontFromDatabase(this.currentRow.AutoNumber);
+                    f.SizeInPoints -= 2;
+                    FireBirdPPTFont.SaveFontToDatabase(this.currentRow.AutoNumber, f);
+                    btnSave.PerformClick();
+                    break;
+                case Keys.F10:
+                    f = FireBirdPPTFont.GetFontFromDatabase(this.currentRow.AutoNumber);
+                    f.Bold = !f.Bold;
+                    FireBirdPPTFont.SaveFontToDatabase(this.currentRow.AutoNumber, f);
+                    btnSave.PerformClick();
+                    break;
+                case Keys.F11:
+                    MainStaticClass.SlideView.GoToLast();
+                    break;
+                case Keys.F12:
+                    splitVerses();
+                    break;
+                default:
+                    break;
+            }
+        }
 
-		// Verse splitting
-		ArrayList rez = new ArrayList();
-		private void breakVerses(int verses)
-		{
-			int position;
-			foreach (BibleDataset.SongVersesRow r in dt.Rows)
-			{
-				position = 0;
-				for (int i = 0; i < verses; i++)
-				{
-					position = r.Verse.IndexOf("\r\n", position);
-					if (position == -1)
-						break;
-					position += 2;
-				}
+        // Verse splitting
+        ArrayList rez = new ArrayList();
+        private void breakVerses(int verses)
+        {
+            int position;
+            foreach (BibleDataset.SongVersesRow r in dt.Rows)
+            {
+                position = 0;
+                for (int i = 0; i < verses; i++)
+                {
+                    position = r.Verse.IndexOf("\r\n", position);
+                    if (position == -1)
+                        break;
+                    position += 2;
+                }
 
-				if (position != -1)
-				{
-					r.Verse = r.Verse.Substring(0, position) + "<br/>\r\n" + r.Verse.Substring(position);
-				}
-			}
+                if (position != -1)
+                {
+                    r.Verse = r.Verse.Substring(0, position) + "<br/>\r\n" + r.Verse.Substring(position);
+                }
+            }
 
-			btnSave.PerformClick();
-		}
-		private void splitVerses()
-		{
-			rez.Clear();
-			System.IO.StreamReader sr = new StreamReader("C:\\rez.txt", System.Text.Encoding.Unicode);
-			while (sr.Peek() != -1)
-			{
-				string s = sr.ReadLine();
-				s = s.Replace("\r", ""); s = s.Replace("\n", "");
-				rez.Add(s);
-			}
-			sr.Close();
+            btnSave.PerformClick();
+        }
+        private void splitVerses()
+        {
+            rez.Clear();
+            System.IO.StreamReader sr = new StreamReader("C:\\rez.txt", System.Text.Encoding.Unicode);
+            while (sr.Peek() != -1)
+            {
+                string s = sr.ReadLine();
+                s = s.Replace("\r", ""); s = s.Replace("\n", "");
+                rez.Add(s);
+            }
+            sr.Close();
 
-			foreach (BibleDataset.SongVersesRow r in dt.Rows)
-			{
-				string o = r.Verse;
-				string[] ws = o.Split(" ".ToCharArray());
-				int i = ws[0].Length + 1;
+            foreach (BibleDataset.SongVersesRow r in dt.Rows)
+            {
+                string o = r.Verse;
+                string[] ws = o.Split(" ".ToCharArray());
+                int i = ws[0].Length + 1;
 
-				// Build split points table
-				SortedList sl = new SortedList();
-				for (int z = 1; z < ws.Length; z++)
-				{
-					string w = ws[z];
-					w = w.Replace(":", ""); w = w.Replace(";", ""); w = w.Replace(",", "");
-					w = w.Replace(".", ""); w = w.Replace("'", ""); w = w.Replace("\"", "");
-					w = w.Replace("`", ""); w = w.Replace("!", ""); w = w.Replace("~", "");
-					w = w.Replace("-", ""); w = w.Replace("?", "");
-					if (w.Length > 0 && char.IsUpper(w, 0))
-					{
-						bool isAfterPunc = ws[z - 1].Substring(ws[z - 1].Length - 1, 1) == ";";
-						bool inExcludeList = rez.Contains(w);
-						if (!inExcludeList)
-						{
-							sl.Add(i, i);
-						}
-						else
-						{
-							if (isAfterPunc)
-							{
-								sl.Add(i, i);
-							}
-						}
-					}
-					i += ws[z].Length + 1;
-				}
-				for (int z = sl.Count - 1; z >= 0; z--)
-				{
-					int current = (int)sl.GetByIndex(z);
-					//int previous = (int)sl.GetByIndex(z-1);
-					o = o.Insert(current, "\r\n");
-				}
-				r.Verse = o;
-			}
-			btnSave.PerformClick();
-		}
-		private void button2_Click(object sender, System.EventArgs e)
-		{
-			this.save();
-			refreshSongRow(Presenter.DefaultDS.Songs.FindByAutoNumber(currentRow.AutoNumber + 1));
-		}
+                // Build split points table
+                SortedList sl = new SortedList();
+                for (int z = 1; z < ws.Length; z++)
+                {
+                    string w = ws[z];
+                    w = w.Replace(":", ""); w = w.Replace(";", ""); w = w.Replace(",", "");
+                    w = w.Replace(".", ""); w = w.Replace("'", ""); w = w.Replace("\"", "");
+                    w = w.Replace("`", ""); w = w.Replace("!", ""); w = w.Replace("~", "");
+                    w = w.Replace("-", ""); w = w.Replace("?", "");
+                    if (w.Length > 0 && char.IsUpper(w, 0))
+                    {
+                        bool isAfterPunc = ws[z - 1].Substring(ws[z - 1].Length - 1, 1) == ";";
+                        bool inExcludeList = rez.Contains(w);
+                        if (!inExcludeList)
+                        {
+                            sl.Add(i, i);
+                        }
+                        else
+                        {
+                            if (isAfterPunc)
+                            {
+                                sl.Add(i, i);
+                            }
+                        }
+                    }
+                    i += ws[z].Length + 1;
+                }
+                for (int z = sl.Count - 1; z >= 0; z--)
+                {
+                    int current = (int)sl.GetByIndex(z);
+                    //int previous = (int)sl.GetByIndex(z-1);
+                    o = o.Insert(current, "\r\n");
+                }
+                r.Verse = o;
+            }
+            btnSave.PerformClick();
+        }
+        private void button2_Click(object sender, System.EventArgs e)
+        {
+            this.save();
+            refreshSongRow(Presenter.DefaultDS.Songs.FindByAutoNumber(currentRow.AutoNumber + 1));
+        }
 #endif
-		#endregion
-	}
+        #endregion
+    }
 }

@@ -6,8 +6,8 @@
         {
         }
     
-		partial class SongsDataTable
-		{
-		}
-	}
+        partial class SongsDataTable
+        {
+        }
+    }
 }

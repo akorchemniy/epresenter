@@ -6,12 +6,12 @@ using System.Text;
 
 namespace EmpowerPresenter
 {
-	public class ProjectListItem
-	{
-		public IProject project;
-		public override string ToString()
-		{
-			return project.GetName();
-		}
-	}
+    public class ProjectListItem
+    {
+        public IProject project;
+        public override string ToString()
+        {
+            return project.GetName();
+        }
+    }
 }

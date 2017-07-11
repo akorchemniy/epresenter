@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace EmpowerPresenter.Dialogs
 {
-	public partial class SongPackageDlg : Form
-	{
-		public SongPackageDlg()
-		{
-			// TODO: log ceip
-			// TODO: get a list of song packages
+    public partial class SongPackageDlg : Form
+    {
+        public SongPackageDlg()
+        {
+            // TODO: log ceip
+            // TODO: get a list of song packages
 
-			InitializeComponent();
-		}
-	}
+            InitializeComponent();
+        }
+    }
 }
