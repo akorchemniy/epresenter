@@ -8,7 +8,9 @@ http://vendisoft.biz/epresenter/documentation/bible_searching.html
  - Firebird
      - Firebird embedded is in 3rdparty.
      - Firebird .net client is required (see 3rdparty for MSI known to be compatible)
-     - Firebird Maestro can be used to edit the database
+     - Database clients
+        - See https://www.firebirdsql.org/en/third-party-tools/
+        - https://dbeaver.jkiss.org/ - free universal db client
 
 ## Developer notes
  - To use Entity Framework: 
