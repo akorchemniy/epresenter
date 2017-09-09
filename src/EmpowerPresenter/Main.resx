@@ -158,28 +158,28 @@
     <value>Primary translation</value>
   </data>
   <data name="toolStripMenuItem2ndNone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="toolStripMenuItem2ndNone.Text" xml:space="preserve">
     <value>None</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 6</value>
+    <value>149, 6</value>
   </data>
   <data name="toolStripMenuItem2ndKJV.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="toolStripMenuItem2ndKJV.Text" xml:space="preserve">
     <value>English - KJV</value>
   </data>
   <data name="toolStripMenuItem2ndRussian.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="toolStripMenuItem2ndRussian.Text" xml:space="preserve">
     <value>Russian</value>
   </data>
   <data name="toolStripMenuItem2ndUkrainian.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="toolStripMenuItem2ndUkrainian.Text" xml:space="preserve">
     <value>Ukrainian</value>
@@ -191,28 +191,28 @@
     <value>Second translation</value>
   </data>
   <data name="toolStripMenuItem3rdNone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="toolStripMenuItem3rdNone.Text" xml:space="preserve">
     <value>None</value>
   </data>
   <data name="toolStripMenuItem5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 6</value>
+    <value>149, 6</value>
   </data>
   <data name="toolStripMenuItem3rdKJV.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="toolStripMenuItem3rdKJV.Text" xml:space="preserve">
     <value>English - KJV</value>
   </data>
   <data name="toolStripMenuItem3rdRussian.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="toolStripMenuItem3rdRussian.Text" xml:space="preserve">
     <value>Russian</value>
   </data>
   <data name="toolStripMenuItem3rdUkrainian.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="toolStripMenuItem3rdUkrainian.Text" xml:space="preserve">
     <value>Ukrainian</value>
@@ -224,19 +224,19 @@
     <value>Third translation</value>
   </data>
   <data name="verseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>150, 22</value>
   </data>
   <data name="verseToolStripMenuItem.Text" xml:space="preserve">
     <value>1 Verse</value>
   </data>
   <data name="toolStripMenuItem2Verses.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>150, 22</value>
   </data>
   <data name="toolStripMenuItem2Verses.Text" xml:space="preserve">
     <value>2 Verses</value>
   </data>
   <data name="fitByFontSizeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>150, 22</value>
   </data>
   <data name="fitByFontSizeToolStripMenuItem.Text" xml:space="preserve">
     <value>Fit by font size</value>
@@ -475,7 +475,7 @@
     <value>btnSmoothTransitions</value>
   </data>
   <data name="&gt;&gt;btnSmoothTransitions.Type" xml:space="preserve">
-    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
+    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=2.1.6461.20642, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnSmoothTransitions.Parent" xml:space="preserve">
     <value>pnlTop</value>
@@ -561,7 +561,7 @@
     <value>bntPinBackground</value>
   </data>
   <data name="&gt;&gt;bntPinBackground.Type" xml:space="preserve">
-    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
+    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=2.1.6461.20642, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;bntPinBackground.Parent" xml:space="preserve">
     <value>pnlTop</value>
@@ -612,7 +612,7 @@
     <value>btnScroller</value>
   </data>
   <data name="&gt;&gt;btnScroller.Type" xml:space="preserve">
-    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
+    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.6461.20642, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnScroller.Parent" xml:space="preserve">
     <value>pnlTop</value>
@@ -702,7 +702,7 @@
     <value>btnAnouncement</value>
   </data>
   <data name="&gt;&gt;btnAnouncement.Type" xml:space="preserve">
-    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
+    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.6461.20642, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnAnouncement.Parent" xml:space="preserve">
     <value>pnlTop</value>
@@ -729,7 +729,7 @@
     <value>btnHideDisplay</value>
   </data>
   <data name="&gt;&gt;btnHideDisplay.Type" xml:space="preserve">
-    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
+    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=2.1.6461.20642, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnHideDisplay.Parent" xml:space="preserve">
     <value>pnlTop</value>
@@ -792,7 +792,7 @@
     <value>btnSongs</value>
   </data>
   <data name="&gt;&gt;btnSongs.Type" xml:space="preserve">
-    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
+    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.6461.20642, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnSongs.Parent" xml:space="preserve">
     <value>pnlTop</value>
@@ -819,7 +819,7 @@
     <value>btnBlackScreen</value>
   </data>
   <data name="&gt;&gt;btnBlackScreen.Type" xml:space="preserve">
-    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
+    <value>Vendisoft.Controls.ImageButton, EmpowerPresenter, Version=2.1.6461.20642, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnBlackScreen.Parent" xml:space="preserve">
     <value>pnlTop</value>
@@ -846,7 +846,7 @@
     <value>btnImage</value>
   </data>
   <data name="&gt;&gt;btnImage.Type" xml:space="preserve">
-    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
+    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.6461.20642, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnImage.Parent" xml:space="preserve">
     <value>pnlTop</value>
@@ -909,7 +909,7 @@
     <value>btnBible</value>
   </data>
   <data name="&gt;&gt;btnBible.Type" xml:space="preserve">
-    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
+    <value>Vendisoft.Controls.NavButton, EmpowerPresenter, Version=2.1.6461.20642, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnBible.Parent" xml:space="preserve">
     <value>pnlTop</value>
@@ -1101,7 +1101,7 @@
     <value>songSearchPnl1</value>
   </data>
   <data name="&gt;&gt;songSearchPnl1.Type" xml:space="preserve">
-    <value>EmpowerPresenter.SongSearchPnl, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
+    <value>EmpowerPresenter.SongSearchPnl, EmpowerPresenter, Version=2.1.6461.20642, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;songSearchPnl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1131,7 +1131,7 @@
     <value>bibleSearchPnl1</value>
   </data>
   <data name="&gt;&gt;bibleSearchPnl1.Type" xml:space="preserve">
-    <value>EmpowerPresenter.BibleSearchPnl, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
+    <value>EmpowerPresenter.BibleSearchPnl, EmpowerPresenter, Version=2.1.6461.20642, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;bibleSearchPnl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1161,7 +1161,7 @@
     <value>scrollerSearchPnl1</value>
   </data>
   <data name="&gt;&gt;scrollerSearchPnl1.Type" xml:space="preserve">
-    <value>EmpowerPresenter.ScrollerSearchPnl, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
+    <value>EmpowerPresenter.ScrollerSearchPnl, EmpowerPresenter, Version=2.1.6461.20642, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;scrollerSearchPnl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1191,7 +1191,7 @@
     <value>anouncementSearchPnl1</value>
   </data>
   <data name="&gt;&gt;anouncementSearchPnl1.Type" xml:space="preserve">
-    <value>EmpowerPresenter.AnouncementSearchPnl, EmpowerPresenter, Version=2.1.6401.18715, Culture=neutral, PublicKeyToken=null</value>
+    <value>EmpowerPresenter.AnouncementSearchPnl, EmpowerPresenter, Version=2.1.6461.20642, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;anouncementSearchPnl1.Parent" xml:space="preserve">
     <value>$this</value>
