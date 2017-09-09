@@ -15,6 +15,40 @@ using FirebirdSql.Data.FirebirdClient;
 
 namespace EmpowerPresenter
 {
+    /*
+        @startuml
+        title ePresenter Bible feature - Class Diagram
+        class BibleProject {
+            - selection range
+            - PrepareForDisplay()
+        }
+        class BibleVerse {
+            - ref verse
+            - secondary verse
+        }
+        class ParseData
+        enum BibleRenderingFormat
+        class BibleSearchResult {
+            - verse
+            - score
+        }
+        class BibleSearchHelper {
+            - GetScore()
+        }
+
+        BibleSearchPnl -down-> BibleSearchHelper
+        BibleSearchHelper -down-> BibleSearchResult
+        BibleSearchResult -down-> BibleVerse
+        BibleSearchPnl -down-> BibleVerse
+        BibleSearchPnl -down-> BibleProject
+        BibleProject -down-> BibleVerse
+        BibleProject -down-> FireBird: LoadBibData >
+        BibleProject -down-> VerseBreakDown: PrepareForDisplay >
+        VerseBreakDown -down-> GfxTextRegion: PrepSlide >
+        GfxContext -down-> GfxTextRegion
+        DisplayEngine -down-> GfxContext
+        @enduml
+    */
     public class BibleProject : IProject, ISlideShow, IKeyClient, ISupportGfxCtx
     {
         public event EventHandler Refresh;

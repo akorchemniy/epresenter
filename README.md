@@ -11,6 +11,7 @@ http://vendisoft.biz/epresenter/documentation/bible_searching.html
      - Database clients
         - See https://www.firebirdsql.org/en/third-party-tools/
         - https://dbeaver.jkiss.org/ - free universal db client
+            - Java based. For connection string use "jdbc:firebirdsql:embedded:{file}"
 
 ## Developer notes
  - To use Entity Framework: 
