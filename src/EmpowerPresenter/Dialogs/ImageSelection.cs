@@ -597,8 +597,8 @@ namespace EmpowerPresenter
                     fs.Close();
 
                     // Perform XOR
-                    //for (int j = 0; j < bytes.Length; j++)
-                    //{ bytes[j] = (byte)(bytes[j] ^ 0xff); }
+                    for (int j = 0; j < bytes.Length; j++)
+                    { bytes[j] = (byte)(bytes[j] ^ 0xff); }
 
                     MemoryStream ms = new MemoryStream(bytes);
                     Image img = Image.FromStream(ms);
