@@ -51,6 +51,25 @@ namespace EmpowerPresenter
         }
         private void LoadBibDat(BibleVerse verse)
         {
+            // Understanding the databse
+            // SELECT FIRST 10 * FROM BIBLEVERSES
+            // SELECT DISTINCT VERSION FROM BIBLEVERSES
+            // SELECT DISTINCT BOOK FROM BIBLEVERSES
+
+            // Verses are queried in the number scheme of the primary translation
+            // KJV Psalms 23 == RST Psalms 22
+            // SELECT FIRST 10 * FROM BIBLEVERSES AS PRI WHERE PRI.VERSION = 'RST' AND PRI.BOOK = 'Psalms'
+
+            // Old implementation of the Bibleverse table
+            // KJV | Ref book = original KJV numbering | Book = RST equivalent numbering
+            // RST | Ref book = original RST numbering | Book = KJV equivalent numbering
+            // One advantage of the old method is that ability to preload all the version of a chapter in the primary translation
+
+            // PENDING: This code needs to be refactored to use a universal numbering scheme
+            // https://www.biblegateway.com/passage/?search=Psalm+23&version=RUSV
+            // KJV | Ref book = KJV numbering | Book = KJV numbering
+            // RST | Ref book = KJV numbering | Book = RST numbering
+
             currentVerseNum = verse.RefVerse;
             string ver1 = Program.ConfigHelper.BiblePrimaryTranslation;
             string ver2 = Program.ConfigHelper.BibleSecondaryTranslation;
@@ -171,6 +190,15 @@ namespace EmpowerPresenter
             string ver2 = Program.ConfigHelper.BibleSecondaryTranslation;
             return (ver2 != "" && ver1 != ver2);
         }
+        private int TranslationCount()
+        {
+            int ret = 1;
+            if (!string.IsNullOrEmpty(Program.ConfigHelper.BibleSecondaryTranslation))
+                ret++;
+            if (!string.IsNullOrEmpty(Program.ConfigHelper.BibleTertiaryTranslation))
+                ret++;
+            return ret;
+        }
         
         // Graphics prep
         private void PrepareForDisplay()
@@ -189,22 +217,16 @@ namespace EmpowerPresenter
             /// Split each of the verses if necessary
             foreach (BibleVerse bvCurrent in this.bibVerses.Values)
             {
-                // Calculate max block size for multi
+                // Calculate max block size
                 Size nativeSize = DisplayEngine.NativeResolution.Size;
-                int maxh; Size maxSize;
-                if (IsMultiTrans())
-                {
-                    double insideHeight = nativeSize.Height - imageFactory.paddingPixels * 3;
-                    insideHeight /= 2;
-                    insideHeight -= bibFont.SizeInPoints * 1.2 * 2;
-                    maxh = (int)insideHeight;
-                    maxSize = new Size(imageFactory.maxInsideWidth, maxh);
-                }
-                else
-                {
-                    maxh = (int)(((double)nativeSize.Height - imageFactory.paddingPixels * 2.5));
-                    maxSize = new Size(imageFactory.maxInsideWidth, maxh);
-                }
+                int transCount = TranslationCount();
+                double insideHeight = nativeSize.Height;
+                insideHeight -= imageFactory.paddingPixels * 2; // Top and bottom
+                insideHeight -= imageFactory.paddingPixels * (transCount - 1); // Between translations
+                insideHeight /= transCount;
+                insideHeight -= bibFont.SizeInPoints * 1.5; // Space for verse labels
+                int maxh = (int)insideHeight;
+                Size maxSize = new Size(imageFactory.maxInsideWidth, maxh);
 
                 VerseBreakDown d = new VerseBreakDown();
                 d.bibleVerse = bvCurrent;
