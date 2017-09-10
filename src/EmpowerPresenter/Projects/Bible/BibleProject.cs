@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Diagnostics;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -576,6 +577,17 @@ namespace EmpowerPresenter
             public List<string> secondaryText = new List<string>();
             public List<string> tertiaryText = new List<string>();
 
+            public List<string> LinesForSlide(int slide)
+            {
+                List<string> text = new List<string>();
+                if (primaryText.Count > 0)
+                    text.Add(primaryText[Math.Min(slide, primaryText.Count - 1)]);
+                if (secondaryText.Count > 0)
+                    text.Add(secondaryText[Math.Min(slide, secondaryText.Count - 1)]);
+                if (tertiaryText.Count > 0)
+                    text.Add(tertiaryText[Math.Min(slide, tertiaryText.Count - 1)]);
+                return text;
+            }
             public int MaxCount
             {
                 get 
@@ -623,69 +635,67 @@ namespace EmpowerPresenter
                     return false;
 
                 // Format data
-                string primaryText = subIndex > data.primaryText.Count - 1 ? data.primaryText[data.primaryText.Count - 1] : data.primaryText[subIndex];
-                string secondaryText = subIndex > data.secondaryText.Count - 1 ? data.secondaryText[data.secondaryText.Count - 1] : data.secondaryText[subIndex];
-                string priRef = data.bibleVerse.ToString();
-                string secRef = data.bibleVerse.ToString(true);
 
+                List<string> text = data.LinesForSlide(subIndex);
+                List<string> refs = data.bibleVerse.ReferenceList();
+                if (text.Count != refs.Count)
+                    Debug.WriteLine("Number of refs and text lines don't match");
                 Size nativeSize = DisplayEngine.NativeResolution.Size;
 
                 #region Measure
                 StringFormat sf = GetStringFormat();
-                int insideHeight = nativeSize.Height - paddingPixels * 2;
+                int insideHeight = nativeSize.Height - paddingPixels * 2; // subtract outside padding
                 int insideWidth = nativeSize.Width - paddingPixels * 2;
-                Point anchorTop = new Point(paddingPixels, paddingPixels);
-                Point anchorBottom = new Point(paddingPixels, paddingPixels + (int)((double)insideHeight / 2));
+                //Point anchorTop = new Point(paddingPixels, paddingPixels);
+                //Point anchorBottom = new Point(paddingPixels, paddingPixels + (int)((double)insideHeight / 2));
 
                 // Measure the reference blocks
                 int refemSize = (int)(font.SizeInPoints * .9); // actual drawing size is smaller than usual
                 int refBlockHeight = (int)(font.SizeInPoints * 1.2);
 
-                // Measure both strings
-                RectangleF r1 = new RectangleF(anchorTop.X, anchorTop.Y, insideWidth,
-                    InternalMeasureString(primaryText, font, insideWidth, sf).Height);
-                RectangleF r2 = new RectangleF(anchorBottom.X, anchorBottom.Y, insideWidth,
-                    InternalMeasureString(secondaryText, font, insideWidth, sf).Height);
+                List<RectangleF> rectangles = new List<RectangleF>();
+                for (int ix = 0; ix < text.Count; ix++)
+                {
+                    double yOffset = paddingPixels + (ix * (double)insideHeight / text.Count);
+                    rectangles.Add(new RectangleF(paddingPixels, (int)yOffset, insideWidth,
+                        InternalMeasureString(text[ix], font, insideWidth, sf).Height));
+                }
 
-                if (r1.Height + r2.Height + refBlockHeight * 2 > insideHeight)
-                    return false;
-
+                // Validate blocks fit
+                float totalHeight = rectangles.Sum(r => r.Height + refBlockHeight);
+                if (totalHeight > insideHeight)
+                    System.Diagnostics.Debug.WriteLine("Failed to fit layout of " + data.ToString());
                 #endregion
 
                 #region Build context
                 ctx.destSize = DisplayEngine.NativeResolution.Size;
                 ctx.textRegions.Clear();
 
-                // First part
-                GfxTextRegion rVerse1 = new GfxTextRegion();
-                ctx.textRegions.Add(rVerse1);
-                rVerse1.font = font;
-                rVerse1.font.HorizontalAlignment = HorizontalAlignment.Left;
-                rVerse1.font.VerticalAlignment = VerticalAlignment.Top;
-                rVerse1.message = primaryText;
+                int sectionCount = Math.Min(text.Count, refs.Count);
+                for (int section = 0; section < sectionCount; section++)
+                {
+                    GfxTextRegion rVerse1 = new GfxTextRegion();
+                    rVerse1.font = font;
+                    rVerse1.font.HorizontalAlignment = HorizontalAlignment.Left;
+                    rVerse1.font.VerticalAlignment = VerticalAlignment.Top;
+                    rVerse1.message = text[section];
+                    rVerse1.bounds = rectangles[section];
+                    rVerse1.bounds.Height += refBlockHeight; // Some slack in case the measurement fell short
+                    ctx.textRegions.Add(rVerse1);
 
-                // First reference
-                GfxTextRegion rRef1 = new GfxTextRegion();
-                ctx.textRegions.Add(rRef1);
-                rRef1.font = (PresenterFont)font.Clone();
-                SetRefFont(rRef1.font);
-                rRef1.message = priRef;
+                    GfxTextRegion rRef1 = new GfxTextRegion();
+                    rRef1.font = (PresenterFont)font.Clone();
+                    SetRefFont(rRef1.font);
+                    rRef1.message = refs[section];
+                    rRef1.bounds = rectangles[section];
+                    // Position ref after text with some room to avoid collision
+                    rRef1.bounds.Y += rRef1.bounds.Height + refemSize;
+                    rRef1.bounds.Height = refBlockHeight;
+                    ctx.textRegions.Add(rRef1);
+                }
+                // PENDING: Handle asymetric block sizes
 
-                // Second part
-                GfxTextRegion rVerse2 = new GfxTextRegion();
-                ctx.textRegions.Add(rVerse2);
-                rVerse2.font = font;
-                rVerse2.font.HorizontalAlignment = HorizontalAlignment.Left;
-                rVerse2.font.VerticalAlignment = VerticalAlignment.Top;
-                rVerse2.message = secondaryText;
-
-                // Second reference
-                GfxTextRegion rRef2 = new GfxTextRegion();
-                ctx.textRegions.Add(rRef2);
-                rRef2.font = (PresenterFont)font.Clone();
-                SetRefFont(rRef2.font);
-                rRef2.message = secRef;
-
+                /* OLD
                 // Adjust bounds
                 int standardMax = (int)((double)insideHeight / 2);
                 if (r1.Height + refBlockHeight > standardMax || r2.Height + refBlockHeight > standardMax)
@@ -716,6 +726,7 @@ namespace EmpowerPresenter
                     rRef2.bounds = r2;
                     rRef2.bounds.Height = refBlockHeight;
                 }
+                */
                 #endregion
 
                 return true;
@@ -810,7 +821,7 @@ namespace EmpowerPresenter
                 }
                 else
                 {
-                    reference = data.bibleVerse.ToString(true);
+                    reference = data.bibleVerse.ReferenceForTranslation(2);
                     txt = data.secondaryText[subIndex];
                 }
                 #endregion
