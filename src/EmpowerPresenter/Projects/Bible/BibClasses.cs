@@ -20,6 +20,13 @@ namespace EmpowerPresenter
         public int SecondaryVerse = -1;
         public string SecondaryText = "";
 
+        // PENDING - refactor to avoid code repetition
+        public string TertiaryVersion = "";
+        public string TertiaryBook = "";
+        public int TertiaryChapter = -1;
+        public int TertiaryVerse = -1;
+        public string TertiaryText = "";
+
         public override string ToString()
         {
             return ToString(false);

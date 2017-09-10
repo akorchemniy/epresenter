@@ -6,7 +6,7 @@ using System.Text;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Data.OleDb;
+using System.Linq;
 
 using EmpowerPresenter.Data;
 using System.ComponentModel;
@@ -83,6 +83,17 @@ namespace EmpowerPresenter
             LoadBibDat(verse); // Load the bible data from the database
             PrepareForDisplay();
         }
+        List<string> TranslationList()
+        {
+            List<string> translations = new List<string>();
+            if (!string.IsNullOrEmpty(Program.ConfigHelper.BiblePrimaryTranslation))
+                translations.Add(Program.ConfigHelper.BiblePrimaryTranslation);
+            if (!string.IsNullOrEmpty(Program.ConfigHelper.BibleSecondaryTranslation))
+                translations.Add(Program.ConfigHelper.BibleSecondaryTranslation);
+            if (!string.IsNullOrEmpty(Program.ConfigHelper.BibleTertiaryTranslation))
+                translations.Add(Program.ConfigHelper.BibleTertiaryTranslation);
+            return translations;
+        }
         private void LoadBibDat(BibleVerse verse)
         {
             // Understanding the databse
@@ -97,106 +108,76 @@ namespace EmpowerPresenter
             // Old implementation of the Bibleverse table
             // KJV | Ref book = original KJV numbering | Book = RST equivalent numbering
             // RST | Ref book = original RST numbering | Book = KJV equivalent numbering
-            // One advantage of the old method is that ability to preload all the version of a chapter in the primary translation
+            // One advantage of the old method is that ability to preload all the version of a chapter relative to the primary translation
 
             // PENDING: This code needs to be refactored to use a universal numbering scheme
             // https://www.biblegateway.com/passage/?search=Psalm+23&version=RUSV
             // KJV | Ref book = KJV numbering | Book = KJV numbering
             // RST | Ref book = KJV numbering | Book = RST numbering
 
-            currentVerseNum = verse.RefVerse;
-            string ver1 = Program.ConfigHelper.BiblePrimaryTranslation;
-            string ver2 = Program.ConfigHelper.BibleSecondaryTranslation;
-            bool useMapping = (ver2 != "" && (ver1 == "KJV" || ver2 == "KJV")); // mapping is enabled when there is a secondary translation and at least one translation is english KJV
-            
+            List<string> translations = TranslationList();
+            List<BibleVerse> verses = new List<BibleVerse>();
             bibVerses.Clear();
-
+            currentVerseNum = verse.RefVerse;
             using (FBirdTask t = new FBirdTask())
             {
-                if (useMapping)
+                string select = "SELECT ";
+                for (int tnum = 1; tnum <= translations.Count; tnum++)
                 {
-                    t.CommandText = "SELECT PRI.REFVERSE, PRI.BOOK, PRI.CHAPTER, PRI.VERSE, SEC.DATA, PRI.DATA " +
-                    "FROM (BIBLEVERSES AS PRI LEFT JOIN BIBLEVERSES AS SEC " +
-                    "ON PRI.BOOK = SEC.REFBOOK AND PRI.CHAPTER = SEC.REFCHAPTER AND PRI.VERSE = SEC.REFVERSE) " +
-                    "WHERE PRI.VERSION = @Version AND SEC.VERSION = @SecondVersion AND PRI.REFBOOK = @Book AND PRI.REFCHAPTER = @Chapter " + 
-                    "ORDER BY PRI.REFBOOK, PRI.REFCHAPTER, PRI.REFVERSE, PRI.VERSE";
-                    t.Command.Parameters.Add("@Version", FbDbType.VarChar, 10).Value = ver1;
-                    t.Command.Parameters.Add("@SecondVersion", FbDbType.VarChar, 10).Value = ver2;
-                    t.Command.Parameters.Add("@Book", FbDbType.VarChar, 50).Value = verse.RefBook;
-                    t.Command.Parameters.Add("@Chapter", FbDbType.Integer).Value = verse.RefChapter;
-                    t.ExecuteReader();
-
-                    BibleVerse bVerse;
-                    while (t.DR.Read())
-                    {
-                        bVerse = new BibleVerse();
-                        bVerse.RefVersion = ver1;
-                        bVerse.RefBook = verse.RefBook;
-                        bVerse.RefChapter = verse.RefChapter;
-                        bVerse.RefVerse = t.GetInt32(0);
-                        bVerse.SecondaryVersion = ver2;
-                        bVerse.SecondaryBook = t.GetString(1);
-                        bVerse.SecondaryChapter = t.GetInt32(2);
-                        bVerse.SecondaryVerse = t.GetInt32(3);
-                        bVerse.SecondaryText = t.GetString(4);
-                        bVerse.Text = t.GetString(5);
-                        bibVerses.Add(bVerse.RefVerse, bVerse);
-                    }
+                    if (tnum > 1)
+                        select += ", ";
+                    select += string.Format("T{0}.REFBOOK, T{0}.REFCHAPTER, T{0}.REFVERSE, T{0}.DATA", tnum);
                 }
-                else if (ver2 != "") // RST & UK
+                string from = " FROM BIBLEVERSES AS T1";
+                for (int transIx = 1; transIx < translations.Count; transIx++)
                 {
-                    t.CommandText =
-                        "SELECT PRI.REFVERSE, SEC.REFVERSE, PRI.DATA, SEC.DATA " +
-                        "FROM (BIBLEVERSES AS PRI JOIN BIBLEVERSES AS SEC " +
-                        "ON PRI.REFBOOK = SEC.REFBOOK AND PRI.CHAPTER = SEC.REFCHAPTER AND PRI.VERSE = SEC.REFVERSE) " +
-                        "WHERE PRI.VERSION = @Version AND SEC.VERSION = @SecondVersion AND PRI.REFBOOK = @Book AND PRI.REFCHAPTER = @Chapter " +
-                        "ORDER BY PRI.REFBOOK, PRI.REFCHAPTER, PRI.REFVERSE, PRI.VERSE";
-                    t.Command.Parameters.Add("@Version", FbDbType.VarChar, 10).Value = ver1;
-                    t.Command.Parameters.Add("@SecondVersion", FbDbType.VarChar, 10).Value = ver2;
-                    t.Command.Parameters.Add("@Book", FbDbType.VarChar, 50).Value = verse.RefBook;
-                    t.Command.Parameters.Add("@Chapter", FbDbType.Integer).Value = verse.RefChapter;
-                    t.ExecuteReader();
-
-                    BibleVerse bVerse;
-                    while (t.DR.Read())
-                    {
-                        bVerse = new BibleVerse();
-                        bVerse.RefVersion = ver1;
-                        bVerse.RefBook = verse.RefBook;
-                        bVerse.RefChapter = verse.RefChapter;
-                        bVerse.RefVerse = t.GetInt32(0);
-                        bVerse.SecondaryVersion = ver2;
-                        bVerse.SecondaryBook = verse.RefBook;
-                        bVerse.SecondaryChapter = verse.RefChapter;
-                        bVerse.SecondaryVerse = t.GetInt32(1);
-                        bVerse.SecondaryText = t.GetString(3);
-                        bVerse.Text = t.GetString(2);
-                        bibVerses.Add(bVerse.RefVerse, bVerse);
-                    }
+                    bool doMaping = translations[0] == "KJV" || translations[transIx] == "KJV";
+                    if (doMaping)
+                        from += string.Format(" LEFT JOIN BIBLEVERSES AS T{0} ON T1.BOOK = T{0}.REFBOOK AND T1.CHAPTER = T{0}.REFCHAPTER AND T1.VERSE = T{0}.REFVERSE", (transIx + 1));
+                    else
+                        from += string.Format(" LEFT JOIN BIBLEVERSES AS T{0} ON T1.REFBOOK = T{0}.REFBOOK AND T1.REFCHAPTER = T{0}.REFCHAPTER AND T1.REFVERSE = T{0}.REFVERSE", (transIx + 1));
                 }
-                else // One version
-                {
-                    t.CommandText = "SELECT RefVerse, Data FROM BibleVerses " +
-                    "WHERE Version = @Version AND RefBook = @Book AND RefChapter = @Chapter " +
-                    "ORDER BY RefBook, RefChapter, RefVerse";
-                    t.Command.Parameters.Add("@Version", FbDbType.VarChar, 10).Value = ver1;
-                    t.Command.Parameters.Add("@Book", FbDbType.VarChar, 50).Value = verse.RefBook;
-                    t.Command.Parameters.Add("@Chapter", FbDbType.Integer).Value = verse.RefChapter;
-                    t.ExecuteReader();
+                string where = " WHERE T1.VERSION = @Version1 AND T1.REFBOOK = @Book AND T1.REFCHAPTER = @Chapter";
+                for (int transIx = 1; transIx < translations.Count; transIx++)
+                    where += string.Format(" AND T{0}.VERSION = @Version{0}", (transIx + 1));
+                string order = " ORDER BY T1.REFBOOK, T1.REFCHAPTER, T1.REFVERSE, T1.VERSE";
 
-                    BibleVerse bVerse;
-                    while (t.DR.Read())
+                t.CommandText = select + from + where + order;
+                t.Command.Parameters.Add("@Book", FbDbType.VarChar, 50).Value = verse.RefBook;
+                t.Command.Parameters.Add("@Chapter", FbDbType.Integer).Value = verse.RefChapter;
+                for (int tnum = 1; tnum <= translations.Count; tnum++)
+                    t.Command.Parameters.Add("@Version" + tnum, FbDbType.VarChar, 10).Value = translations[tnum - 1];
+                t.ExecuteReader();
+
+                while (t.DR.Read())
+                {
+                    int ix = 0;
+                    BibleVerse bVerse = new BibleVerse();
+                    bVerse.RefVersion = translations[0];
+                    bVerse.RefBook = t.GetString(ix++);
+                    bVerse.RefChapter = t.GetInt32(ix++);
+                    bVerse.RefVerse = t.GetInt32(ix++);
+                    bVerse.Text = t.GetString(ix++);
+                    if (translations.Count > 1)
                     {
-                        bVerse = new BibleVerse();
-                        bVerse.RefVersion = ver1;
-                        bVerse.RefBook = verse.RefBook;
-                        bVerse.RefChapter = verse.RefChapter;
-                        bVerse.RefVerse = t.GetInt32(0);
-                        bVerse.Text = t.GetString(1);
-                        bibVerses.Add(bVerse.RefVerse, bVerse);
+                        bVerse.SecondaryVersion = translations[1];
+                        bVerse.SecondaryBook = t.GetString(ix++);
+                        bVerse.SecondaryChapter = t.GetInt32(ix++);
+                        bVerse.SecondaryVerse = t.GetInt32(ix++);
+                        bVerse.SecondaryText = t.GetString(ix++);
                     }
+                    if (translations.Count > 2)
+                    {
+                        bVerse.TertiaryVersion = translations[2];
+                        bVerse.TertiaryBook = t.GetString(ix++);
+                        bVerse.TertiaryChapter = t.GetInt32(ix++);
+                        bVerse.TertiaryVerse = t.GetInt32(ix++);
+                        bVerse.TertiaryText = t.GetString(ix++);
+                    }
+                    verses.Add(bVerse);
                 }
             }
+            verses.ForEach(v => bibVerses.Add(v.RefVerse, v));
         }
         public void RefreshData()
         {
@@ -205,7 +186,8 @@ namespace EmpowerPresenter
 
             // Check if bible version changed & reload data if necessary
             if (bibVerses[currentVerseNum].RefVersion != Program.ConfigHelper.BiblePrimaryTranslation ||
-                bibVerses[currentVerseNum].SecondaryVersion != Program.ConfigHelper.BibleSecondaryTranslation)
+                bibVerses[currentVerseNum].SecondaryVersion != Program.ConfigHelper.BibleSecondaryTranslation ||
+                bibVerses[currentVerseNum].TertiaryVersion != Program.ConfigHelper.BibleTertiaryTranslation)
                 LoadBibDat(bibVerses[currentVerseNum]);
 
             currentSubIndex = 0;
@@ -220,18 +202,7 @@ namespace EmpowerPresenter
         }
         private bool IsMultiTrans()
         {
-            string ver1 = Program.ConfigHelper.BiblePrimaryTranslation;
-            string ver2 = Program.ConfigHelper.BibleSecondaryTranslation;
-            return (ver2 != "" && ver1 != ver2);
-        }
-        private int TranslationCount()
-        {
-            int ret = 1;
-            if (!string.IsNullOrEmpty(Program.ConfigHelper.BibleSecondaryTranslation))
-                ret++;
-            if (!string.IsNullOrEmpty(Program.ConfigHelper.BibleTertiaryTranslation))
-                ret++;
-            return ret;
+            return TranslationList().Count > 1;
         }
         
         // Graphics prep
@@ -253,7 +224,7 @@ namespace EmpowerPresenter
             {
                 // Calculate max block size
                 Size nativeSize = DisplayEngine.NativeResolution.Size;
-                int transCount = TranslationCount();
+                int transCount = TranslationList().Count;
                 double insideHeight = nativeSize.Height;
                 insideHeight -= imageFactory.paddingPixels * 2; // Top and bottom
                 insideHeight -= imageFactory.paddingPixels * (transCount - 1); // Between translations
@@ -266,6 +237,7 @@ namespace EmpowerPresenter
                 d.bibleVerse = bvCurrent;
                 d.primaryText = InternalBreakString(bvCurrent.RefVerse, bvCurrent.Text, maxSize);
                 d.secondaryText = InternalBreakString(bvCurrent.SecondaryVerse, bvCurrent.SecondaryText, maxSize);
+                d.tertiaryText = InternalBreakString(bvCurrent.TertiaryVerse, bvCurrent.TertiaryText, maxSize);
                 slideData.Add(bvCurrent.RefVerse, d);
             }
 
@@ -286,7 +258,7 @@ namespace EmpowerPresenter
             /// Go through the original string and construct new strings that compose
             /// a screenful of text. Repeat until the original string is exhausted.
             if (versenumber == -1)
-                return null;
+                return new List<string>();
 
             List<String> stringParts = new List<string>();
 
@@ -602,16 +574,13 @@ namespace EmpowerPresenter
             // Broken across slides
             public List<string> primaryText = new List<string>();
             public List<string> secondaryText = new List<string>();
+            public List<string> tertiaryText = new List<string>();
 
             public int MaxCount
             {
                 get 
                 {
-                    if (secondaryText == null)
-                        return primaryText.Count;
-                    if (primaryText == null)
-                        return secondaryText.Count;
-                    return primaryText.Count > secondaryText.Count ? primaryText.Count : secondaryText.Count; 
+                    return Math.Max(primaryText.Count, Math.Max(secondaryText.Count, tertiaryText.Count));
                 }
             }
         }

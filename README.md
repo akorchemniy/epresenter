@@ -17,6 +17,7 @@ http://vendisoft.biz/epresenter/documentation/bible_searching.html
  - To use Entity Framework: 
      - http://stackoverflow.com/questions/1412086/how-to-register-firebird-data-provider-for-entity-framework
      - http://www.firebirdsql.org/firebirdtutorial/firebird-data-access-designer-ddex-installation.html
+ - UML diagrams in the code can be rended with PlantUML or planttext.com
 
 ## Known issues
  - Release mode build fails to find fbembed.dll in local directory.
